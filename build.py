@@ -261,6 +261,7 @@ def main():
             "intro": intro,
             "image_url": image_url,
             "category": cat if cat else "기타",
+            "speaker": True,
         })
         existing_names.add((name, org))
         speaker_count += 1
@@ -326,6 +327,7 @@ def main():
             "name": p["name"],
             "organization": p["organization"],
             "title": p["title"],
+            "speaker": p.get("speaker", False),
             "intro": p["intro"],
             "category": p["category"],
             "image": p["image"],

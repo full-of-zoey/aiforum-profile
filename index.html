@@ -718,8 +718,41 @@
         const modalOverlay = document.getElementById('modalOverlay');
         const modalClose = document.getElementById('modalClose');
 
+        // 소프트 우선 셔플: 연사는 상위 30% 안에 랜덤 배치, 나머지는 그 뒤에 랜덤
+        function softPriorityShuffle(profiles) {
+            const speakers = profiles.filter(p => p.speaker);
+            const others = profiles.filter(p => !p.speaker);
+
+            // Fisher-Yates 셔플
+            function shuffle(arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+                return arr;
+            }
+
+            shuffle(speakers);
+            shuffle(others);
+
+            // 상위 30% 구간 크기
+            const topZone = Math.floor(profiles.length * 0.3);
+            // 상위 구간에서 연사가 아닌 자리 수
+            const othersInTop = Math.max(0, topZone - speakers.length);
+
+            // 상위 구간: 연사 전원 + 일반 참가자 일부
+            const topGroup = [...speakers, ...others.slice(0, othersInTop)];
+            shuffle(topGroup);
+
+            // 하위 구간: 나머지 일반 참가자
+            const bottomGroup = others.slice(othersInTop);
+
+            return [...topGroup, ...bottomGroup];
+        }
+
         // 데이터 로드 및 렌더링
         function loadData() {
+            profileData = softPriorityShuffle(profileData);
             generateFilterButtons();
             renderProfiles(profileData);
         }
