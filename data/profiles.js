@@ -1,11 +1,10 @@
 const PROFILE_DATA = {
   "categories": [
-    "교원",
-    "장학사",
+    "교원・장학사",
     "정책・연구",
     "교육혁신・에듀테크",
     "AI・기술",
-    "사디세 강사"
+    "사디세를 만들어 가는 사람들"
   ],
   "profiles": [
     {
@@ -14,7 +13,7 @@ const PROFILE_DATA = {
       "organization": "인천간석초등학교",
       "title": "교사",
       "intro": "미래를 이끌 주인공 조력자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1xUWzdYAbHaIoj7I6bs52dOw8gzzd05oo.jpg"
     },
     {
@@ -50,7 +49,7 @@ const PROFILE_DATA = {
       "organization": "세종과학예술영재학교",
       "title": "교사",
       "intro": "여기저기 기웃거리는 호기심쟁이",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1ti5FufcdcI8ij2K4-f4vwD0TdvTAvJsQ.jpg"
     },
     {
@@ -68,7 +67,7 @@ const PROFILE_DATA = {
       "organization": "대구사월초",
       "title": "교사",
       "intro": "끊임없이 도전하며 문제를 해결하는 ‘미래형 인재’의 동반자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1oBsBHdMbT5dc-kXfIEqRG-zw6_l6-svd.jpg"
     },
     {
@@ -77,7 +76,7 @@ const PROFILE_DATA = {
       "organization": "경동고등학교",
       "title": "교사",
       "intro": "학생의 일상을 데이터로 바꾸는 AI기반 교실 실험가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1EVx1nAMwHiR90Nfnz0zEoqHYpJrchfkI.jpg"
     },
     {
@@ -86,7 +85,7 @@ const PROFILE_DATA = {
       "organization": "대구여자고등학교",
       "title": "교사",
       "intro": "기술력으로 인간성을 보완하는 하이테크 하이터치 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1HoKD0r8NB6GTakMArJSLgIwc2XgNP35g.jpg"
     },
     {
@@ -95,7 +94,7 @@ const PROFILE_DATA = {
       "organization": "동덕여자고등학교",
       "title": "교사",
       "intro": "모든 살아있는 것들을 행복하게 하는 기술과 함께 성장하고 이를 나누고 싶은 사람",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1XTWAZPqvlOKx5cVwnncx5uXWepXqirt_.jpg"
     },
     {
@@ -104,7 +103,7 @@ const PROFILE_DATA = {
       "organization": "장흥안양중학교",
       "title": "교사",
       "intro": "AI시대는 또 다른 변화이며, 혁신은 아이들의 미래를 밝게 합니다.",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1rk4arpOD1KUMAj22dr0A1x6sUsDJCZPr.jpg"
     },
     {
@@ -113,7 +112,7 @@ const PROFILE_DATA = {
       "organization": "서울 성일중학교",
       "title": "교사",
       "intro": "AI와 공존하며 세상을 변화시킬 힘을 가르치는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/11gDEEr5d327QiFk-LbFfussI3Wj1k5zi.jpg"
     },
     {
@@ -122,7 +121,7 @@ const PROFILE_DATA = {
       "organization": "제천제일고등학교",
       "title": "교사",
       "intro": "기술의 격변 속에서 배움의 설렘을 찾는 에듀테크 탐험가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1WCW_TvIHnzlihX2-n2Qj3VQMACMDTRaZ.jpg"
     },
     {
@@ -140,7 +139,7 @@ const PROFILE_DATA = {
       "organization": "마산초등학교",
       "title": "교사",
       "intro": "AI시대와 교육의 WIN-WIN",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1c9oukD7CN1JZ3ZFDFysBYy7XOcdBOfNY.jpg"
     },
     {
@@ -155,10 +154,10 @@ const PROFILE_DATA = {
     {
       "id": 17,
       "name": "김미정",
-      "organization": "푸른나무재단 광주지부",
-      "title": "교육 강사",
+      "organization": "푸른나무재단",
+      "title": "사디세 가이드",
       "intro": "아이들이 가능성을 꿈 꿀 수 있는 디딤돌",
-      "category": "사디세 강사",
+      "category": "사디세를 만들어 가는 사람들",
       "image": "images/1joI6OSAmo2aOd1f7-FAskSE51uKtveFq.jpg"
     },
     {
@@ -167,7 +166,7 @@ const PROFILE_DATA = {
       "organization": "경산초등학교",
       "title": "교사",
       "intro": "AI에 활용당하지 않고 활용하는 사람이 되자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1gW7UfDHbUaupbZ9Dgq4QUBp8j0xl-SE0.jpg"
     },
     {
@@ -176,7 +175,7 @@ const PROFILE_DATA = {
       "organization": "문산동초등학교",
       "title": "교사",
       "intro": "조금씩 꾸준한 성장을 꿈꿉니다.",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1Oc79ELvtvZc_BhiRPGQYd9O6DsCnnv5f.jpg"
     },
     {
@@ -185,7 +184,7 @@ const PROFILE_DATA = {
       "organization": "서울신대림초등학교",
       "title": "교사",
       "intro": "스마트한 AI 유저",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1cFPU44aJSc68eb_UAK6h6HztDqoBYyNl.jpg"
     },
     {
@@ -212,7 +211,7 @@ const PROFILE_DATA = {
       "organization": "대전광역시교육청",
       "title": "장학사",
       "intro": "배움을 즐기는 교육 동반자",
-      "category": "장학사",
+      "category": "교원・장학사",
       "image": "images/1ns4kKBWk-433mKk4GSNgrrtVS_quDlB_.jpg"
     },
     {
@@ -221,7 +220,7 @@ const PROFILE_DATA = {
       "organization": "인천새말초등학교",
       "title": "교사",
       "intro": "아이들과 함께 성장해 온 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1ScwPWkr-tGPc74NxXsX1okwTzWFIKrK4.jpg"
     },
     {
@@ -230,7 +229,7 @@ const PROFILE_DATA = {
       "organization": "동삭초",
       "title": "교사",
       "intro": "기술을 활용하여 아이들의 주도성을 길러주는 교육 전문가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1yKyjCZ3t1o8SmVwOAzNVLOULXPtGKik5.jpg"
     },
     {
@@ -248,7 +247,7 @@ const PROFILE_DATA = {
       "organization": "고양동산고등학교",
       "title": "교사",
       "intro": "인공지능(AI)과 자연지능(NI)의 균형을 찾는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1IkRh7qq7rsI65ZifZhyUutzNFd4CTLIr.jpg"
     },
     {
@@ -257,7 +256,7 @@ const PROFILE_DATA = {
       "organization": "춘천교육지원청 발명교육센터",
       "title": "겸임교사",
       "intro": "세상의 변화에 능동적으로 대처하는 힘을 키워주는 교육 혁신가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1xtaJ_DE_n1tTrbWXy9mCeDolnLmP9NQ1.jpg"
     },
     {
@@ -266,7 +265,7 @@ const PROFILE_DATA = {
       "organization": "서울사당초등학교",
       "title": "교사",
       "intro": "AI리터러시 역량을 함께 키워가는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/14i-NMmtcWiR5Vwcn2FpUu_dBNV3HAGap.jpg"
     },
     {
@@ -275,7 +274,7 @@ const PROFILE_DATA = {
       "organization": "언남초등학교",
       "title": "교사",
       "intro": "AI 속에서도 인간다움을 세우는 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1ogFjZH01a8SZYet9QeBLa8ab37SIIJJU.jpg"
     },
     {
@@ -302,16 +301,16 @@ const PROFILE_DATA = {
       "organization": "대전삼천중학교",
       "title": "교사",
       "intro": "이미 시작된 특이점, 나는 학생들과 무엇을 해야할까?",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1q0BmzUq3dvYKottWumQ6LXVK2OfqGi3T.jpg"
     },
     {
       "id": 34,
       "name": "김혜영",
       "organization": "푸른나무재단",
-      "title": "사디세 강사",
+      "title": "사디세 가이드",
       "intro": "서로 사랑하는 디지털 세상을 위해",
-      "category": "사디세 강사",
+      "category": "사디세를 만들어 가는 사람들",
       "image": "images/1z5_9Gjbx1v_FCCtMc-1g-uRZjJWRwjoQ.jpg"
     },
     {
@@ -320,7 +319,7 @@ const PROFILE_DATA = {
       "organization": "안산양지초등학교",
       "title": "교사",
       "intro": "늘 배우려는 자세를 가지고 있는 초등교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1ETgR1dfiX7oWQ5CmIBoMMmJ3kbqhoxG9.jpg"
     },
     {
@@ -329,7 +328,7 @@ const PROFILE_DATA = {
       "organization": "군자중학교",
       "title": "교사",
       "intro": "AI윤리교육 실천가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1gpdJNy_gOq1Q6S_OiLIMzYN4sObeJNnI.jpg"
     },
     {
@@ -338,7 +337,7 @@ const PROFILE_DATA = {
       "organization": "인천송림초등학교",
       "title": "교사",
       "intro": "디지털 파도를 타고 아이들의 무한한 잠재력을 깨우는 항해사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1iktIxhPKWZX1hW2XRyHdZ8u2AdxG3YxD.jpg"
     },
     {
@@ -347,7 +346,7 @@ const PROFILE_DATA = {
       "organization": "백암고등학교",
       "title": "교사",
       "intro": "AI의 무엇을, 언제, 어떻게 교육하면 좋을지 고민하는 연구자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1TqiY5UlYjPBaX8RTnOHmAMgTw2dwB6iA.jpg"
     },
     {
@@ -365,7 +364,7 @@ const PROFILE_DATA = {
       "organization": "부론초등학교",
       "title": "교사",
       "intro": "예술교육 어디까지 적용발전시킬 전문가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/150vwUgDqKyuBjFXe728e6d8ViJ8vnyHt.jpg"
     },
     {
@@ -383,7 +382,7 @@ const PROFILE_DATA = {
       "organization": "서울동성중학교",
       "title": "전문상담교사",
       "intro": "AI와의 지혜로운 협업을 추구하는 상담가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1wr9g-67rtbKR07waX46TzPBwpWQ9GPI9.jpg"
     },
     {
@@ -392,7 +391,7 @@ const PROFILE_DATA = {
       "organization": "홍익대학교사범대학부속여자고등학교(홍대부여고)",
       "title": "교사",
       "intro": "‘건강하게 자연스럽게’를 돕는 따뜻한 동행자이자 AI에듀테크보건교육 연구회 대표",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1iiPA6_6kEHf7cCKRmZIQUvVo5JnjfAG7.jpg"
     },
     {
@@ -401,7 +400,7 @@ const PROFILE_DATA = {
       "organization": "광덕초등학교",
       "title": "교사",
       "intro": "배우며 더해가는 디지털 기반 수업 실천가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1CigpkgNPmSgizMPxUyn_vlHUkkKlfYwO.jpg"
     },
     {
@@ -410,16 +409,16 @@ const PROFILE_DATA = {
       "organization": "충남교육청",
       "title": "교사",
       "intro": "학생들과 함께 성장하는 노력형 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1gsRx1CXanuYppVE5-3_v9tsFuSe_3iA4.jpg"
     },
     {
       "id": 46,
       "name": "박은혜",
       "organization": "푸른나무재단",
-      "title": "가이드",
+      "title": "사디세 가이드",
       "intro": "AI 시대, 디지털 시민성으로 학생들의 생각과 선택을 키우는 교육자",
-      "category": "사디세 강사",
+      "category": "사디세를 만들어 가는 사람들",
       "image": "images/1eA49axMR0hyI0pI7ULrkPdnNeVwkWEh9.jpg"
     },
     {
@@ -428,13 +427,13 @@ const PROFILE_DATA = {
       "organization": "수원매화초",
       "title": "교감",
       "intro": "미래를 발명해온 교육실천가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/181AKzrgN7wnFDRFMpCKLsKFRbSuZ4Mdo.jpg"
     },
     {
       "id": 48,
       "name": "박진석",
-      "organization": "동부초등학교",
+      "organization": "브라이언임팩트",
       "title": "디렉터",
       "intro": "새로운 기술과 상상이 세상을 바꿉니다",
       "category": "AI・기술",
@@ -446,7 +445,7 @@ const PROFILE_DATA = {
       "organization": "초등교사커뮤니티 인디스쿨",
       "title": "이사장",
       "intro": "순수함을 잃지않으려 노력하는 교사 겸 교육활동가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1DFZL8trAkG5tJcG2Glyz4upukywkgIXr.jpg"
     },
     {
@@ -455,7 +454,7 @@ const PROFILE_DATA = {
       "organization": "와부중학교",
       "title": "교사",
       "intro": "미래 세대를 살아갈 주역을 양성하는 초보 교육전문가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1OCcz0LQHI7did8vK-OiujP9oH74DCNHX.jpg"
     },
     {
@@ -464,7 +463,7 @@ const PROFILE_DATA = {
       "organization": "인천시교육청",
       "title": "장학사",
       "intro": "AI디지털 교육 고민이",
-      "category": "장학사",
+      "category": "교원・장학사",
       "image": "images/1yTE_tODlx5rL3obQA1f_uqq4pWhdGkx_.jpg"
     },
     {
@@ -473,7 +472,7 @@ const PROFILE_DATA = {
       "organization": "사회적기업 다로리인",
       "title": "대표",
       "intro": "둥근 AI시대가 되길 바라며!",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1j7wJuwfKqM7qE8ozQL-IT79v2tomu3Re.jpg"
     },
     {
@@ -482,7 +481,7 @@ const PROFILE_DATA = {
       "organization": "복자고",
       "title": "교사",
       "intro": "기술을 이용하여 아이들의 성장을 돕는 조력가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/19uXUpB5be3lbKy0GzmLKi7SAlPJkJZxO.jpg"
     },
     {
@@ -509,56 +508,65 @@ const PROFILE_DATA = {
       "organization": "송림초",
       "title": "교사",
       "intro": "숲교육에 ai를 활용하고 싶은 연구년제 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1qixx3FPwPiB4RpcjemflJFF-75HDk24H.jpg"
     },
     {
       "id": 57,
+      "name": "송미옥",
+      "organization": "신백현초등학교 /신경윤리가치AI융합연구소(서울교대 윤리교육과 박사과정)",
+      "title": "교사/수석연구원",
+      "intro": "AI윤리교육의 길을 여는 사람",
+      "category": "교원・장학사",
+      "image": "images/12tcsUYWXRG8CPvMz4BH-lQeAdKHxrRF3.jpg"
+    },
+    {
+      "id": 58,
       "name": "송세호",
       "organization": "아주중학교",
       "title": "교사",
       "intro": "유튜브 과학 크리에이터 송쌤과학 운영자입니다.",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1DLPOG6jOMVvhX7aul39XvOsvP1KLYW90.jpg"
     },
     {
-      "id": 58,
+      "id": 59,
       "name": "송채원",
       "organization": "리라초등학교",
       "title": "교사",
       "intro": "호치민시한국국제학교 AI교과전담을 마치고 한국에 온 AI새내기",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1zPdYy4PJaCOhWSz1eMYdPy8ndWXiRvLg.jpg"
     },
     {
-      "id": 59,
+      "id": 60,
       "name": "신다윤",
       "organization": "서울미성초등학교",
       "title": "교사",
       "intro": "기술의 선한 영향력을 고민하는 성장설계자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/19fNfJb5iPj1w49AmzC5LuGbcZosA-dN6.jpg"
     },
     {
-      "id": 60,
+      "id": 61,
       "name": "신동석",
       "organization": "아람초등학교",
       "title": "교사",
       "intro": "함께 행복하길 바라는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1TFILzF-1h8irB4E21MxprGHrZgxqE-EG.jpg"
     },
     {
-      "id": 61,
+      "id": 62,
       "name": "신법규",
       "organization": "인천원동초등학교",
       "title": "교사",
       "intro": "디지털 기술로 아이들의 꿈을 빚는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1CXVVIP3Gk6mJFiVZm8bt8vad5OBCwEMz.jpg"
     },
     {
-      "id": 62,
+      "id": 63,
       "name": "신승인",
       "organization": "AI융합교육연구회",
       "title": "연구원",
@@ -567,16 +575,16 @@ const PROFILE_DATA = {
       "image": "images/1SQ42aQnbA6IeIyjk5PUI1wCl_gvAafpE.jpg"
     },
     {
-      "id": 63,
+      "id": 64,
       "name": "신예진",
       "organization": "서울도봉초등학교",
       "title": "교사",
       "intro": "아이들과 함께여서 행복한, AI 감정소통 궁금이",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1HKTsxzczbI_uqu17WEourbHcogWJo9Zy.jpg"
     },
     {
-      "id": 64,
+      "id": 65,
       "name": "안재승",
       "organization": "거꾸로캠퍼스",
       "title": "교육과정팀 팀장",
@@ -585,34 +593,34 @@ const PROFILE_DATA = {
       "image": "images/16etu4AqfpbA5j_vazKfeO65tjv92Dja3.jpg"
     },
     {
-      "id": 65,
+      "id": 66,
       "name": "양기정",
       "organization": "승지초등학교",
       "title": "교사",
       "intro": "AI에 취약하고 두렵지만 앞장서자 다짐한 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1qr2KnBYuF6BWI4QbbyTH8tl1JBoETPhR.jpg"
     },
     {
-      "id": 66,
+      "id": 67,
       "name": "양형진",
       "organization": "서울대학교사범대학부설초등학교",
       "title": "교장",
       "intro": "학생의 주도성을 강조하는 교육과정을 운영하는 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1XJDp3qkjcr3z5PYo6k2jPc_jgc3sr7ow.jpg"
     },
     {
-      "id": 67,
+      "id": 68,
       "name": "양혜진",
       "organization": "다로리인",
       "title": "팀장",
       "intro": "즐거운 마을을 꿈꾸는 로컬 크리에이터",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1F4ZGmVENSPOf3182z-zeLxZso-lniMhr.jpg"
     },
     {
-      "id": 68,
+      "id": 69,
       "name": "엄고은",
       "organization": "기업가치연구소",
       "title": "연구원",
@@ -621,7 +629,7 @@ const PROFILE_DATA = {
       "image": "images/1GLTD00k8g3lypBmb5b5___R_hGmbjVxW.jpg"
     },
     {
-      "id": 69,
+      "id": 70,
       "name": "엄윤미",
       "organization": "재단법인 씨앗",
       "title": "CSO",
@@ -630,7 +638,7 @@ const PROFILE_DATA = {
       "image": "images/1fWmJf_Pbg_aP8HGDCBRmtayqeeZvtSZw.jpg"
     },
     {
-      "id": 70,
+      "id": 71,
       "name": "염강현",
       "organization": "한국지능정보사회진흥원",
       "title": "선임연구원",
@@ -639,7 +647,7 @@ const PROFILE_DATA = {
       "image": "images/13f01A9D3z0Z5xA7q_5zR3Ko2JjrTfqgg.jpg"
     },
     {
-      "id": 71,
+      "id": 72,
       "name": "오선영",
       "organization": "카카오모빌리티",
       "title": "이사",
@@ -648,7 +656,7 @@ const PROFILE_DATA = {
       "image": "images/1guLf2CtMQNSjEjQq0V4BZNGeP4Eo_ega.jpg"
     },
     {
-      "id": 72,
+      "id": 73,
       "name": "오신일",
       "organization": "금천구청소년상담복지센터",
       "title": "센터장",
@@ -657,16 +665,16 @@ const PROFILE_DATA = {
       "image": "images/1reYAKfPXizrLxpx-psjVuktA1GXpKBw1.jpg"
     },
     {
-      "id": 73,
+      "id": 74,
       "name": "원지영",
       "organization": "향산초등학교",
       "title": "교사",
       "intro": "세계를 무대로 학생들의 지평을 열어주고 있는 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1GBeHcJ6ixMFyg4bBdVcciQvr-fNsiso8.jpg"
     },
     {
-      "id": 74,
+      "id": 75,
       "name": "유경혜",
       "organization": "한국미디어강사협회",
       "title": "대표",
@@ -675,7 +683,7 @@ const PROFILE_DATA = {
       "image": "images/1zNkT3prqGcH_7Py77coCM_8AhT6OeLi_.jpg"
     },
     {
-      "id": 75,
+      "id": 76,
       "name": "유은경",
       "organization": "서초스마트유스센터",
       "title": "팀원",
@@ -684,52 +692,70 @@ const PROFILE_DATA = {
       "image": "images/19xbVFzDqX0Zcry0siKXyfEEQQ4kY-DnT.jpg"
     },
     {
-      "id": 76,
+      "id": 77,
       "name": "유태환",
       "organization": "왜관초등학교",
       "title": "교사",
       "intro": "Ai시대에 필요한 지성과 감성 한 스푼 더한 교육 전문가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1GgZx9ek_Pj73RwTXvzZlNneD6eEZt_W-.jpg"
     },
     {
-      "id": 77,
+      "id": 78,
       "name": "육소연",
       "organization": "푸른나무재단/사이좋은 디지털 세상",
       "title": "강사",
       "intro": "포용과 공존으로 디지털 미래를 설계하는 강사",
-      "category": "사디세 강사",
+      "category": "사디세를 만들어 가는 사람들",
       "image": "images/1Yglh_1rgT9pjeEuZvmhyJg_qfWFazPSC.jpg"
     },
     {
-      "id": 78,
+      "id": 79,
+      "name": "육소연",
+      "organization": "푸른나무재단",
+      "title": "사디세 가이드",
+      "intro": "포용과 공존으로 디지털 미래를 설계하는 강사",
+      "category": "사디세를 만들어 가는 사람들",
+      "image": "images/1lFukwwyHwKCRkwFBb4Ba7dvCg58Gh3Gy.jpg"
+    },
+    {
+      "id": 80,
       "name": "육혜연",
       "organization": "푸른나무재단 사이좋은디지털세상",
       "title": "강사",
+      "intro": "디지털 시민성으로 AI와 동행하는 길을 안내합니다",
+      "category": "사디세를 만들어 가는 사람들",
+      "image": "images/1RE4EMyMO83x03pYB426zdBXgTcHZdrRI.jpg"
+    },
+    {
+      "id": 81,
+      "name": "육혜연",
+      "organization": "푸른나무재단",
+      "title": "사디세 가이드",
       "intro": "디지털 시민성으로 AI와 동행하는 길을 안내하는 강사",
-      "category": "사디세 강사",
+      "category": "사디세를 만들어 가는 사람들",
       "image": "images/1qd9rkdfvxzrK67uTHFfkzR2xMBYwNBet.jpg"
     },
     {
-      "id": 79,
+      "id": 82,
       "name": "윤민하",
       "organization": "화광중학교",
       "title": "교사",
       "intro": "AI를 도구로 질문을 이끄는 교육 설계자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1ZEARHkfSb2ao3xvy2r0q73kwqGLEnXEL.jpg"
     },
     {
-      "id": 80,
+      "id": 83,
       "name": "윤선경",
       "organization": "서울금양초등학교",
       "title": "교사",
       "intro": "호기심과 궁금증이 많은 AI 교육 전문가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1BG52R1Y9rdVpYafQegBUyHBj1ZqSlJwB.jpg"
     },
     {
-      "id": 81,
+      "id": 84,
       "name": "윤춘원",
       "organization": "포스코이앤씨",
       "title": "프로",
@@ -738,34 +764,34 @@ const PROFILE_DATA = {
       "image": "images/1vx48LwoINncPGvNJDTC_1ZsP_I4yda6A.jpg"
     },
     {
-      "id": 82,
+      "id": 85,
       "name": "윤한유",
       "organization": "부산기계공업고등학교",
       "title": "부장교사장교사",
       "intro": "실무 현장의 문제를 기술로 해결하고 자선으로 기록하는 공학 교육 설계자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1i_IjYGd1KUwsw3sop-F1h3Iemi3jWbw_.jpg"
     },
     {
-      "id": 83,
+      "id": 86,
       "name": "윤현정",
       "organization": "서울독산초등학교",
       "title": "교사",
       "intro": "어제보다 오늘, 오늘보다 내일, 매일 한보씩 전진하는 사람",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1LYIKqnqVYiwc1PbFCjlC9lKQmd2tz0J5.jpg"
     },
     {
-      "id": 84,
+      "id": 87,
       "name": "이기주",
       "organization": "안서초등학교",
       "title": "교감",
       "intro": "AI시대 우리 미래를 고민하는 자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1hRC0jNdVOAHGTsOGaQGp7jj53qlj0E6i.jpg"
     },
     {
-      "id": 85,
+      "id": 88,
       "name": "이민섭",
       "organization": "가천대학교 스타트업칼리지",
       "title": "초빙교수",
@@ -774,25 +800,25 @@ const PROFILE_DATA = {
       "image": "images/1SHGvtZmH5dKNVcLi3LLF8ohuvKOeMHKj.jpg"
     },
     {
-      "id": 86,
+      "id": 89,
       "name": "이삼미",
       "organization": "신하초등학교",
       "title": "교사",
       "intro": "AI 보다는 아이가 아직 더 익숙한 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1nS8csQfgItwYlYbNCVNY8r79mTX5ZoSl.jpg"
     },
     {
-      "id": 87,
+      "id": 90,
       "name": "이선주",
       "organization": "푸른나무재단",
-      "title": "강사",
+      "title": "사디세 가이드",
       "intro": "뚜벅뚜벅 두발로 전국을 누비며 아동들을 만나는 사이좋은 디지털 세상 강사",
-      "category": "사디세 강사",
+      "category": "사디세를 만들어 가는 사람들",
       "image": "images/1Hwwowi8d_ipV6qXbtEDh8-yrgSk2rOyo.jpg"
     },
     {
-      "id": 88,
+      "id": 91,
       "name": "이소림",
       "organization": "재단법인 씨앗 공간사업실",
       "title": "PM",
@@ -801,16 +827,16 @@ const PROFILE_DATA = {
       "image": "images/1UNsSedrnl_86s048h3t0Dv1KEKKVyiH4.jpg"
     },
     {
-      "id": 89,
+      "id": 92,
       "name": "이소희",
       "organization": "경수중학교",
       "title": "부장교사",
       "intro": "고전을 통한 문해력을 생활 속에서 다각도로 키울 수 있고 흥미롭게 배움을 즐기는 동기 부여의 크리에이터",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1JxN_LlT-Bohq-zgBv887BcXSxUs9EQNL.jpg"
     },
     {
-      "id": 90,
+      "id": 93,
       "name": "이송하",
       "organization": "넥슨재단",
       "title": "팀장",
@@ -819,25 +845,34 @@ const PROFILE_DATA = {
       "image": "images/1_s_3N4MJ98fop8GFuIWCksquuc5zebxx.jpg"
     },
     {
-      "id": 91,
+      "id": 94,
       "name": "이수민",
       "organization": "함현초등학교",
       "title": "교사",
       "intro": "AI의 활용방법이 궁금한 교육가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1d1kJ7A2AnES7qtStslfZGGWtz5oLCQ0M.jpg"
     },
     {
-      "id": 92,
+      "id": 95,
+      "name": "이수연",
+      "organization": "신현고등학교",
+      "title": "교사",
+      "intro": "AI로 사람을 더 사람답게 만들 상담교사",
+      "category": "교원・장학사",
+      "image": "images/1zh3roIDqWjcssURk06OZn_5T70aUu8l7.jpg"
+    },
+    {
+      "id": 96,
       "name": "이승재",
       "organization": "인천송림초등학교",
       "title": "3학년부장",
       "intro": "배려심과 이해심이 넘쳐나는 학급을 만들고자 힘쓰는 노력가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1sZC1tYblVXxdm6CJP6V0X9myvjj2eoY_.jpg"
     },
     {
-      "id": 93,
+      "id": 97,
       "name": "이예리",
       "organization": "성남시청소년청년재단",
       "title": "매니저",
@@ -846,43 +881,43 @@ const PROFILE_DATA = {
       "image": "images/1GK8Mdp3uKNod5ASedN3VE2IgKUQ2A28g.jpg"
     },
     {
-      "id": 94,
+      "id": 98,
       "name": "이원경",
       "organization": "분당초",
       "title": "정보부장교사",
       "intro": "정보부장 2년. AI시대 선봉대장.",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/13w8Sk85SUq8hgyhlkz2xPtVf-BZ9PQxp.jpg"
     },
     {
-      "id": 95,
+      "id": 99,
       "name": "이유나",
       "organization": "서울난우초",
       "title": "교사사",
       "intro": "AI라는 새로운 언어를 배우며, 아이들과 함께 미래를 설계하는 교육 탐험가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1DGSvTieXVIQVLU5Uqr71x4PYRmRGaanC.jpg"
     },
     {
-      "id": 96,
+      "id": 100,
       "name": "이윤아",
       "organization": "한양대학교사범대학부속중학교",
       "title": "교사",
       "intro": "AI융합교육으로 미래역량을 재밌게 틔우는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1cp2Q05Scv5z5kd3xUFXODyq_Fr8I7ZcS.jpg"
     },
     {
-      "id": 97,
+      "id": 101,
       "name": "이은진",
       "organization": "인천 송빛초",
       "title": "교사",
       "intro": "나다움을 바탕으로 우리를 가르치는 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1Zz3jWbvb5CUDTqYLwuKFJr_vztaSLdMp.jpg"
     },
     {
-      "id": 98,
+      "id": 102,
       "name": "이은혜",
       "organization": "어썸스쿨",
       "title": "부장",
@@ -891,25 +926,25 @@ const PROFILE_DATA = {
       "image": "images/12xbCpEmLfJUH-bEyU1AOlh2bpKhTrwXW.jpg"
     },
     {
-      "id": 99,
+      "id": 103,
       "name": "이재혁",
       "organization": "대구관광고등학교",
       "title": "교사",
       "intro": "따뜻한 기술을 추구하는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1nEroPx-NZFep72vvQ9rCq9T8Y3n7LVCF.jpg"
     },
     {
-      "id": 100,
+      "id": 104,
       "name": "이정규",
       "organization": "원주 상지여자고등학교",
       "title": "교사",
       "intro": "AI 외국어 전문가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1StUmpxR-EoIpRi6-GQtXCEQWB5X5xVbj.jpg"
     },
     {
-      "id": 101,
+      "id": 105,
       "name": "이정백",
       "organization": "거꾸로캠퍼스",
       "title": "대표",
@@ -918,7 +953,7 @@ const PROFILE_DATA = {
       "image": "images/1XKptHchpwYwg8yt-5Nsuf0qv5d0bcaX4.jpg"
     },
     {
-      "id": 102,
+      "id": 106,
       "name": "이주영",
       "organization": "서울로봇인공지능과학관",
       "title": "주무관",
@@ -927,25 +962,25 @@ const PROFILE_DATA = {
       "image": "images/1bQF_WJL0tCrCaPPz9qWACvZOMOr0j78I.jpg"
     },
     {
-      "id": 103,
+      "id": 107,
       "name": "이지윤",
       "organization": "서울신동초등학교",
       "title": "교사",
       "intro": "AI를 알아가며 AI를 잘 사용할 줄 아는 교실을 만들고 싶은 교사입니다.",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1HoDppqJIqt0ASmEfkwo8RVE6T_ys2FQv.jpg"
     },
     {
-      "id": 104,
+      "id": 108,
       "name": "이창준",
       "organization": "사내초등학교",
       "title": "교사",
       "intro": "AI를 활용한 메이커/테크교육을 실천하는 발명가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1zA6Lwpj8I14nsZqdLlznYQykTM3IhM3H.jpg"
     },
     {
-      "id": 105,
+      "id": 109,
       "name": "이태경",
       "organization": "코웨이",
       "title": "과장",
@@ -954,16 +989,16 @@ const PROFILE_DATA = {
       "image": "images/1Vfz1Njx3MRunB6NeJXs4TN9gT3nMeOTO.jpg"
     },
     {
-      "id": 106,
+      "id": 110,
       "name": "이현길",
       "organization": "부천초등학교",
       "title": "교사",
       "intro": "교실 속 춤으로 소통하는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1jptVpeAb_xzJ_NhDnL0h0XUYjjmNOl9Q.jpg"
     },
     {
-      "id": 107,
+      "id": 111,
       "name": "이현지",
       "organization": "숭실대학교 사회복지학부",
       "title": "교수",
@@ -972,7 +1007,7 @@ const PROFILE_DATA = {
       "image": "images/1PCX6YdJRZnvGJ1i-cbiHoXszYRwOcyjO.jpg"
     },
     {
-      "id": 108,
+      "id": 112,
       "name": "이혜수",
       "organization": "아산나눔재단",
       "title": "선임매니저",
@@ -981,16 +1016,16 @@ const PROFILE_DATA = {
       "image": "images/1GxJxOxTu2muvetfi3D_5bXV88y0MtqnW.jpg"
     },
     {
-      "id": 109,
+      "id": 113,
       "name": "이혜지",
       "organization": "서울영서초등학교",
       "title": "교사",
       "intro": "AI 기술에 온기를 더해 아이들의 미래를 빚는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1IcWgnUnjjcTaRMDoHZsnFQ2OeUtkJL6_.jpg"
     },
     {
-      "id": 110,
+      "id": 114,
       "name": "이호정",
       "organization": "카카오",
       "title": "리더",
@@ -999,34 +1034,34 @@ const PROFILE_DATA = {
       "image": "images/1CQSfWpLEscxB7EQs_6XeDHJZPldmti9V.jpg"
     },
     {
-      "id": 111,
+      "id": 115,
       "name": "임경애",
       "organization": "매원초등학교",
       "title": "교장",
       "intro": "사람의 마음을 품은 AI시대 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1KOPmpOrMI-sRtilteHFxRaW93xLpSjEh.jpg"
     },
     {
-      "id": 112,
+      "id": 116,
       "name": "임규하",
       "organization": "전라남도교육청",
       "title": "장학사",
       "intro": "미래핵심역량을 가진 미래인재양성을 지원하는 교육전문직",
-      "category": "장학사",
+      "category": "교원・장학사",
       "image": "images/1UJnZZe7XzwApt9BLZCBY3lNrKRmyzLId.jpg"
     },
     {
-      "id": 113,
+      "id": 117,
       "name": "임미자",
       "organization": "탄천초등학교",
       "title": "교감",
       "intro": "기술이 사람을 이롭게하는 교육을 고민하는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1nUX6zTh6eLx-hsa40QvI-evKw4p5hB6D.jpg"
     },
     {
-      "id": 114,
+      "id": 118,
       "name": "임종화",
       "organization": "서울시립금천청소년센터",
       "title": "관장",
@@ -1035,7 +1070,7 @@ const PROFILE_DATA = {
       "image": "images/1hAhZ7QNzQkMVW4ZbBpREiRQ82Qs7eZLn.jpg"
     },
     {
-      "id": 115,
+      "id": 119,
       "name": "임지연",
       "organization": "숭실대학교 기업가치연구소",
       "title": "연구원",
@@ -1044,16 +1079,16 @@ const PROFILE_DATA = {
       "image": "images/1lza9-yfB20a4BFJAnrfZJe-7od0H9bFc.jpg"
     },
     {
-      "id": 116,
+      "id": 120,
       "name": "임태훈",
       "organization": "대구삼영초등학교",
       "title": "교사",
       "intro": "과학을 넣은 우리음악 조림, 근데 이제 AI를 곁들인.",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1Al2se879zBL0V78W3ATQWS8MID0caz-a.jpg"
     },
     {
-      "id": 117,
+      "id": 121,
       "name": "장미희",
       "organization": "성남시청소년청년재단",
       "title": "미래교육실장",
@@ -1062,7 +1097,7 @@ const PROFILE_DATA = {
       "image": "images/19vlSg-UwxMquOpqrngqtKR59cZI9B1Z-.jpg"
     },
     {
-      "id": 118,
+      "id": 122,
       "name": "장선영",
       "organization": "한국과학창의재단",
       "title": "연구원",
@@ -1071,34 +1106,34 @@ const PROFILE_DATA = {
       "image": "images/1sDSiqF_IE5knspL3H7-KiFzoda_BwhPm.jpg"
     },
     {
-      "id": 119,
+      "id": 123,
       "name": "장영진",
       "organization": "잠원초등학교",
       "title": "교사",
       "intro": "AI로 아이의 내일을 열어, 배움의 지도를 새로 그리다",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1fYYpXEQ0YVzU0XgYywnu6DIwgGrKV6yy.jpg"
     },
     {
-      "id": 120,
+      "id": 124,
       "name": "장원정",
       "organization": "혜원여자고등학교",
       "title": "교사",
       "intro": "어려운 과학기술을 쉽게 알리고 싶은 과학커뮤니케이터",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1r4KasP8BOmxiRcwA46c241C8jFZ2Cw3d.jpg"
     },
     {
-      "id": 121,
+      "id": 125,
       "name": "전민우",
       "organization": "인천산곡북초등학교",
       "title": "교사",
       "intro": "사람 중심 교육으로 AI시대를 준비하는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1x-ZVbMARl4vcWIt39Hek-8wk7_cdTxkt.jpg"
     },
     {
-      "id": 122,
+      "id": 126,
       "name": "전정아",
       "organization": "아산나눔재단",
       "title": "부팀장",
@@ -1107,34 +1142,34 @@ const PROFILE_DATA = {
       "image": "images/1KeFDL01Q2pP4yuDBVHrf67ZnBGSj66-T.jpg"
     },
     {
-      "id": 123,
+      "id": 127,
       "name": "정구영",
       "organization": "광교호수초등학교",
       "title": "교사",
       "intro": "아이들의 성장을 이끌고 기록하는 데이터 기반 교육가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1iqJzKQiNW6DRYRGwamk99hsAmV7OGmM0.jpg"
     },
     {
-      "id": 124,
+      "id": 128,
       "name": "정미영",
       "organization": "대구대천초등학교",
       "title": "초등교사",
       "intro": "진정한 교육이 무엇인지 아직도 찾지 못한 교육 유목민",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1H-bMEjCtO33ULoUcdhRBU11lxBmOOf4z.jpg"
     },
     {
-      "id": 125,
+      "id": 129,
       "name": "정우진",
       "organization": "대제중학교",
       "title": "교사",
       "intro": "AI시대 주도성 있는 학생을 기르고 싶은 교육혁신가",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/17C8U2nnVXbsC_Ks7QgYndnvBMmnxxDMI.jpg"
     },
     {
-      "id": 126,
+      "id": 130,
       "name": "정유주",
       "organization": "카카오게임즈",
       "title": "매니저",
@@ -1143,16 +1178,16 @@ const PROFILE_DATA = {
       "image": "images/13umDI0W_G4075lO2nf_MAngUbZYjMiLB.jpg"
     },
     {
-      "id": 127,
+      "id": 131,
       "name": "정지수",
       "organization": "오산고등학교",
       "title": "교사",
       "intro": "항상 공부하려고 노력합니다.",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1CQ3qHqEu--wAA98T-qzC-D-7bFajYUdI.jpg"
     },
     {
-      "id": 128,
+      "id": 132,
       "name": "정찬필",
       "organization": "피클랩/미래교실네트워크",
       "title": "대표",
@@ -1161,7 +1196,16 @@ const PROFILE_DATA = {
       "image": "images/1GKB3dIFtA_ryzdQaUdMZYV3jXYeptvfa.jpg"
     },
     {
-      "id": 129,
+      "id": 133,
+      "name": "정현주",
+      "organization": "희망대초등학교",
+      "title": "교사",
+      "intro": "겨울을 준비하는 전략형 다람쥐",
+      "category": "교원・장학사",
+      "image": "images/1XavV5rnV65wAMk9Q8QKfHk_IagJ0lyf9.jpg"
+    },
+    {
+      "id": 134,
       "name": "조상욱",
       "organization": "브라이언임팩트",
       "title": "디렉터",
@@ -1170,25 +1214,25 @@ const PROFILE_DATA = {
       "image": "images/1UVvm6WjVn6kz-JWo81k9XoeVRm3C7Orj.jpg"
     },
     {
-      "id": 130,
+      "id": 135,
       "name": "조승범",
       "organization": "충남교육청",
       "title": "초등교사",
       "intro": "흔들리지 않고 소신있게 아이들을 지도하는 바위",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1H2KSAg9YQsI0gtIiVue6NJRfCLzRkzpL.jpg"
     },
     {
-      "id": 131,
+      "id": 136,
       "name": "조아란",
       "organization": "신남중학교",
       "title": "교사",
       "intro": "Warm_Bridge 학생들과 따뜻한 시선, 기술을 공유하는 교사",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1JxgG6TSqBsVq6CQGIRS9mBGqHxMYlz3S.jpg"
     },
     {
-      "id": 132,
+      "id": 137,
       "name": "조영탁",
       "organization": "넥슨코리아",
       "title": "과장",
@@ -1197,7 +1241,7 @@ const PROFILE_DATA = {
       "image": "images/1jimSAelSKNu3EMLEQOI5615ZJKfUIrcI.jpg"
     },
     {
-      "id": 133,
+      "id": 138,
       "name": "주보미",
       "organization": "성남시청소년청년재단",
       "title": "매니저",
@@ -1206,16 +1250,16 @@ const PROFILE_DATA = {
       "image": "images/1UnQSp5qU8H1xrWRoyHjkdA9KJb6Ct0J6.jpg"
     },
     {
-      "id": 134,
+      "id": 139,
       "name": "진예은",
       "organization": "경기태성초등학교",
       "title": "교사",
       "intro": "AI로 배움의 가능성을 넓혀요",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/170yEM_dpm_xFWNALQrab-SjSjRMPRNVE.jpg"
     },
     {
-      "id": 135,
+      "id": 140,
       "name": "최명길",
       "organization": "사단법인 미래교실네트워크",
       "title": "사무총장",
@@ -1224,61 +1268,61 @@ const PROFILE_DATA = {
       "image": "images/1L2bD-k70BNCSTfCOaUSp4Ier-q3FyIJZ.jpg"
     },
     {
-      "id": 136,
+      "id": 141,
       "name": "최명환",
       "organization": "인천학산초등학교",
       "title": "교사",
       "intro": "따뜻한 AI 수업 새내기",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1tgECSG1bwCXgLipdaB0st5bAMGMQxvfo.jpg"
     },
     {
-      "id": 137,
+      "id": 142,
       "name": "최서연",
       "organization": "한류초등학교",
       "title": "교사",
       "intro": "”기술을 재미있게, 교육을 의미있게“",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1wreiT9W5FDxfsijcUfyHKB4BvpZHDZ2J.jpg"
     },
     {
-      "id": 138,
+      "id": 143,
       "name": "최인경",
       "organization": "인천동막초등학교",
       "title": "교사",
       "intro": "AF (AI FRIEND) 만들기",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1S_UFljsvQReMaRskQ-nFbhVwG0yMlf1f.jpg"
     },
     {
-      "id": 139,
+      "id": 144,
       "name": "최정원",
       "organization": "한국정보교사연합회",
       "title": "부회장",
       "intro": "if(정보교육==진심): return 아이들의_무한한_미래",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1QTm1aiUd5hzhy5XalZ5A4WCj24lfuVla.jpg"
     },
     {
-      "id": 140,
+      "id": 145,
       "name": "평진영",
       "organization": "덕풍초등학교",
       "title": "교사",
       "intro": "세상을 바꾸는 선한 영향력, 디지털 윤리와 공존을 실천하는 진심 어린 가이드",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1_OGXZ1eESO8Q5Xe9pM_zl_NCl1cZuzMM.jpg"
     },
     {
-      "id": 141,
+      "id": 146,
       "name": "한미향",
       "organization": "인천선학초등학교",
       "title": "교사",
       "intro": "AI에듀테크에스며드는중입니다",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1As483j926rWRN8vMBVBpDA_2pBP5_2Mv.jpg"
     },
     {
-      "id": 142,
+      "id": 147,
       "name": "한상욱",
       "organization": "창의와날개",
       "title": "이사",
@@ -1287,34 +1331,34 @@ const PROFILE_DATA = {
       "image": "images/1LadknRS1UR6t8qkuLNU3cGFwHHXTmktX.jpg"
     },
     {
-      "id": 143,
+      "id": 148,
       "name": "한영희",
       "organization": "재현고등학교",
       "title": "교사",
       "intro": "오프라인과 온라인 사이의 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1jUfwkc4qoLM818j57MKR2a3tdqleL-_M.jpg"
     },
     {
-      "id": 144,
+      "id": 149,
       "name": "한재용",
       "organization": "순천고등학교",
       "title": "교사",
       "intro": "학생들이 AI를 어떻게 활용해야할지 고민하는 선생님",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1RIiQKBKDffzqzzIk_6m9MN6q4HB0ywUW.jpg"
     },
     {
-      "id": 145,
+      "id": 150,
       "name": "현예지",
       "organization": "동부초등학교",
       "title": "부장교사",
       "intro": "AI 시대에 문해력과 질문의 힘으로 아이들의 생각을 주체로 세워온 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1hQH6GmwztGoZNF-0gvfPAPH1Av6zKyr6.jpg"
     },
     {
-      "id": 146,
+      "id": 151,
       "name": "황민호",
       "organization": "카카오",
       "title": "수석",
@@ -1323,24 +1367,24 @@ const PROFILE_DATA = {
       "image": "images/1A_9I-47T8y3mgcu69uqVJfS6rJMuHMb0.jpg"
     },
     {
-      "id": 147,
+      "id": 152,
       "name": "황윤주",
       "organization": "고명외식고등학교",
       "title": "교사",
       "intro": "기술을 도구로 사용하여 올바른 인성을 길러온 교육 협력자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1MBbRZmWvphKqBlMQn3T9lnysYZ_v3GjD.jpg"
     },
     {
-      "id": 148,
+      "id": 153,
       "name": "황정호",
       "organization": "서울삼육고등학교",
       "title": "교사",
       "intro": "에듀테크 활용한 교육자",
-      "category": "교원",
+      "category": "교원・장학사",
       "image": "images/1pUgqjt_mdUywnc19d4TR9xXHeq3Ltd7p.jpg"
     }
   ],
-  "total": 148,
-  "built_at": "2026-02-11 11:28:28"
+  "total": 153,
+  "built_at": "2026-02-11 14:54:31"
 };

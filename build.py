@@ -157,9 +157,13 @@ def main():
         mid_cat = row[3].strip() if len(row) > 3 else ""
         org = row[10].strip() if len(row) > 10 else ""
 
-        # 카카오 → AI・기술로 통합
+        # 카테고리 통합
         if mid_cat == "카카오":
             mid_cat = "AI・기술"
+        if mid_cat == "교원" or mid_cat == "장학사":
+            mid_cat = "교원・장학사"
+        if mid_cat == "사디세 강사":
+            mid_cat = "사디세를 만들어 가는 사람들"
         if mid_cat:
             category_by_name[name] = mid_cat
             category_by_name_org[(name, org)] = mid_cat
@@ -258,12 +262,11 @@ def main():
 
     # 카테고리 순서 정의 (필터 버튼 순서)
     category_order = [
-        "교원",
-        "장학사",
+        "교원・장학사",
         "정책・연구",
         "교육혁신・에듀테크",
         "AI・기술",
-        "사디세 강사",
+        "사디세를 만들어 가는 사람들",
     ]
 
     output_data = {
