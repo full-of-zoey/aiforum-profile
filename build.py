@@ -18,6 +18,7 @@ import hashlib
 # === 설정 ===
 SHEET1_URL = "https://docs.google.com/spreadsheets/d/1O2Ya7XqKJpFaJScJp1fbPR6Y3Rgjn_qsVYgIy9E-k2M/gviz/tq?tqx=out:csv&gid=1551428892"
 SHEET2_URL = "https://docs.google.com/spreadsheets/d/1u6TjlTKfBH5_9MnGCEG6C3NrjazX77tslbe3BxGN498/gviz/tq?tqx=out:csv&gid=225355410"
+SPEAKER_URL = "https://docs.google.com/spreadsheets/d/1O2Ya7XqKJpFaJScJp1fbPR6Y3Rgjn_qsVYgIy9E-k2M/gviz/tq?tqx=out:csv&gid=965491336"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGES_DIR = os.path.join(BASE_DIR, "images")
@@ -222,6 +223,49 @@ def main():
             no_category.append(name)
 
         profiles.append(profile)
+
+    # --- 연사 시트 파싱 ---
+    print("\n📥 연사 시트 다운로드 중...")
+    speaker_text = download_csv(SPEAKER_URL)
+    hs, rows_s = parse_csv(speaker_text)
+    print(f"  → {len(rows_s)}행 로드")
+
+    # 기존 프로필 이름 세트 (중복 방지)
+    existing_names = {(p["name"], p["organization"]) for p in profiles}
+
+    speaker_count = 0
+    for row in rows_s:
+        cat = row[1].strip() if len(row) > 1 else ""
+        name = row[2].strip() if len(row) > 2 else ""
+        org = row[3].strip() if len(row) > 3 else ""
+        title = row[4].strip() if len(row) > 4 else ""
+        intro = row[5].strip() if len(row) > 5 else ""
+        image_url = row[6].strip() if len(row) > 6 else ""
+
+        if not name:
+            continue
+
+        # 카테고리 통합 (교원 → 교원・장학사)
+        if cat == "교원" or cat == "장학사":
+            cat = "교원・장학사"
+
+        # 기존 참가자와 중복이면 스킵
+        if (name, org) in existing_names:
+            print(f"  스킵 (기존 참가자와 중복): {name}")
+            continue
+
+        profiles.append({
+            "name": name,
+            "organization": org,
+            "title": title,
+            "intro": intro,
+            "image_url": image_url,
+            "category": cat if cat else "기타",
+        })
+        existing_names.add((name, org))
+        speaker_count += 1
+
+    print(f"  ✅ 연사 {speaker_count}명 추가")
 
     # 이름순 정렬
     profiles.sort(key=lambda p: p["name"])

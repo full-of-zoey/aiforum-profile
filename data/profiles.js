@@ -90,6 +90,15 @@ const PROFILE_DATA = {
     },
     {
       "id": 10,
+      "name": "권은진",
+      "organization": "석천초등학교",
+      "title": "교사",
+      "intro": "아이들의 Ai와 인간성 사이의 균형을 조절하는 저울대",
+      "category": "교원・장학사",
+      "image": "images/1vrZC0bqaMnJhgfVoFPBQcLBZz9ln6-NE.jpg"
+    },
+    {
+      "id": 11,
       "name": "기경민",
       "organization": "동덕여자고등학교",
       "title": "교사",
@@ -98,7 +107,7 @@ const PROFILE_DATA = {
       "image": "images/1XTWAZPqvlOKx5cVwnncx5uXWepXqirt_.jpg"
     },
     {
-      "id": 11,
+      "id": 12,
       "name": "김건일",
       "organization": "장흥안양중학교",
       "title": "교사",
@@ -107,7 +116,7 @@ const PROFILE_DATA = {
       "image": "images/1rk4arpOD1KUMAj22dr0A1x6sUsDJCZPr.jpg"
     },
     {
-      "id": 12,
+      "id": 13,
       "name": "김경오",
       "organization": "서울 성일중학교",
       "title": "교사",
@@ -116,7 +125,7 @@ const PROFILE_DATA = {
       "image": "images/11gDEEr5d327QiFk-LbFfussI3Wj1k5zi.jpg"
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "김경진",
       "organization": "제천제일고등학교",
       "title": "교사",
@@ -125,7 +134,7 @@ const PROFILE_DATA = {
       "image": "images/1WCW_TvIHnzlihX2-n2Qj3VQMACMDTRaZ.jpg"
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "김다혜",
       "organization": "성남시청소년상담복지센터",
       "title": "동반자",
@@ -134,7 +143,7 @@ const PROFILE_DATA = {
       "image": "images/1d1nEMVKzkWsa7cJNuANChMOkF18mj5CT.jpg"
     },
     {
-      "id": 15,
+      "id": 16,
       "name": "김리안",
       "organization": "마산초등학교",
       "title": "교사",
@@ -143,7 +152,7 @@ const PROFILE_DATA = {
       "image": "images/1c9oukD7CN1JZ3ZFDFysBYy7XOcdBOfNY.jpg"
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "김만숙",
       "organization": "경기도교육청미디어교육센터",
       "title": "교육연구사",
@@ -152,7 +161,7 @@ const PROFILE_DATA = {
       "image": "images/12r58F5ofjRf9hmhLZn5ywDshlODjo9wu.jpg"
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "김미정",
       "organization": "푸른나무재단",
       "title": "사디세 가이드",
@@ -161,7 +170,7 @@ const PROFILE_DATA = {
       "image": "images/1joI6OSAmo2aOd1f7-FAskSE51uKtveFq.jpg"
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "김민우",
       "organization": "경산초등학교",
       "title": "교사",
@@ -170,7 +179,16 @@ const PROFILE_DATA = {
       "image": "images/1gW7UfDHbUaupbZ9Dgq4QUBp8j0xl-SE0.jpg"
     },
     {
-      "id": 19,
+      "id": 20,
+      "name": "김봉섭",
+      "organization": "한국지능정보사회진흥원 디지털포용문화팀",
+      "title": "연구위원",
+      "intro": "디지털윤리.kr로 디지털 윤리 정책을 만들어온 연구자",
+      "category": "정책・연구",
+      "image": "images/1NMqNJq2DGa9H44Vp0TvQv4wO4uNg51Ox.jpg"
+    },
+    {
+      "id": 21,
       "name": "김선우",
       "organization": "문산동초등학교",
       "title": "교사",
@@ -179,7 +197,7 @@ const PROFILE_DATA = {
       "image": "images/1Oc79ELvtvZc_BhiRPGQYd9O6DsCnnv5f.jpg"
     },
     {
-      "id": 20,
+      "id": 22,
       "name": "김세림",
       "organization": "서울신대림초등학교",
       "title": "교사",
@@ -188,7 +206,7 @@ const PROFILE_DATA = {
       "image": "images/1cFPU44aJSc68eb_UAK6h6HztDqoBYyNl.jpg"
     },
     {
-      "id": 21,
+      "id": 23,
       "name": "김세웅",
       "organization": "카카오",
       "title": "부사장",
@@ -197,7 +215,7 @@ const PROFILE_DATA = {
       "image": "images/12kngOEy6W19lGmng-WeiHp1FqJpXbSFA.jpg"
     },
     {
-      "id": 22,
+      "id": 24,
       "name": "김승일",
       "organization": "모두의연구소",
       "title": "대표",
@@ -206,7 +224,7 @@ const PROFILE_DATA = {
       "image": "images/1pCs_LcK2wJXkc_k4wnn5XScv2tp9xCYJ.jpg"
     },
     {
-      "id": 23,
+      "id": 25,
       "name": "김윤희",
       "organization": "대전광역시교육청",
       "title": "장학사",
@@ -215,7 +233,7 @@ const PROFILE_DATA = {
       "image": "images/1ns4kKBWk-433mKk4GSNgrrtVS_quDlB_.jpg"
     },
     {
-      "id": 24,
+      "id": 26,
       "name": "김정선",
       "organization": "인천새말초등학교",
       "title": "교사",
@@ -224,7 +242,7 @@ const PROFILE_DATA = {
       "image": "images/1ScwPWkr-tGPc74NxXsX1okwTzWFIKrK4.jpg"
     },
     {
-      "id": 25,
+      "id": 27,
       "name": "김정선",
       "organization": "동삭초",
       "title": "교사",
@@ -233,7 +251,7 @@ const PROFILE_DATA = {
       "image": "images/1yKyjCZ3t1o8SmVwOAzNVLOULXPtGKik5.jpg"
     },
     {
-      "id": 26,
+      "id": 28,
       "name": "김종범",
       "organization": "한국과학창의재단",
       "title": "선임연구원",
@@ -242,7 +260,7 @@ const PROFILE_DATA = {
       "image": "images/1MlGwoBwrxC54UmIC6fbkvei4PA3yVhz-.jpg"
     },
     {
-      "id": 27,
+      "id": 29,
       "name": "김준호",
       "organization": "고양동산고등학교",
       "title": "교사",
@@ -251,7 +269,7 @@ const PROFILE_DATA = {
       "image": "images/1IkRh7qq7rsI65ZifZhyUutzNFd4CTLIr.jpg"
     },
     {
-      "id": 28,
+      "id": 30,
       "name": "김지원",
       "organization": "춘천교육지원청 발명교육센터",
       "title": "겸임교사",
@@ -260,7 +278,7 @@ const PROFILE_DATA = {
       "image": "images/1xtaJ_DE_n1tTrbWXy9mCeDolnLmP9NQ1.jpg"
     },
     {
-      "id": 29,
+      "id": 31,
       "name": "김지혜",
       "organization": "서울사당초등학교",
       "title": "교사",
@@ -269,7 +287,7 @@ const PROFILE_DATA = {
       "image": "images/14i-NMmtcWiR5Vwcn2FpUu_dBNV3HAGap.jpg"
     },
     {
-      "id": 30,
+      "id": 32,
       "name": "김지효",
       "organization": "언남초등학교",
       "title": "교사",
@@ -278,7 +296,7 @@ const PROFILE_DATA = {
       "image": "images/1ogFjZH01a8SZYet9QeBLa8ab37SIIJJU.jpg"
     },
     {
-      "id": 31,
+      "id": 33,
       "name": "김진실",
       "organization": "tobl.ai",
       "title": "Product Engineer / 매니저",
@@ -287,7 +305,7 @@ const PROFILE_DATA = {
       "image": "images/1qFmQop9uEfhq28S6v21LhLNiGdFOvYuQ.jpg"
     },
     {
-      "id": 32,
+      "id": 34,
       "name": "김태완",
       "organization": "카카오",
       "title": "리더",
@@ -296,7 +314,7 @@ const PROFILE_DATA = {
       "image": "images/1gimjpGlSii3TcEcusqQHSvvEgMHlwKGn.jpg"
     },
     {
-      "id": 33,
+      "id": 35,
       "name": "김형준",
       "organization": "대전삼천중학교",
       "title": "교사",
@@ -305,7 +323,7 @@ const PROFILE_DATA = {
       "image": "images/1q0BmzUq3dvYKottWumQ6LXVK2OfqGi3T.jpg"
     },
     {
-      "id": 34,
+      "id": 36,
       "name": "김혜영",
       "organization": "푸른나무재단",
       "title": "사디세 가이드",
@@ -314,7 +332,7 @@ const PROFILE_DATA = {
       "image": "images/1z5_9Gjbx1v_FCCtMc-1g-uRZjJWRwjoQ.jpg"
     },
     {
-      "id": 35,
+      "id": 37,
       "name": "김홍주",
       "organization": "안산양지초등학교",
       "title": "교사",
@@ -323,16 +341,25 @@ const PROFILE_DATA = {
       "image": "images/1ETgR1dfiX7oWQ5CmIBoMMmJ3kbqhoxG9.jpg"
     },
     {
-      "id": 36,
+      "id": 38,
       "name": "김희진",
       "organization": "군자중학교",
       "title": "교사",
       "intro": "AI윤리교육 실천가",
       "category": "교원・장학사",
-      "image": "images/1gpdJNy_gOq1Q6S_OiLIMzYN4sObeJNnI.jpg"
+      "image": "images/1jwcu3LMvWcRhulTCqQbD9whNKNzmDt0Y.jpg"
     },
     {
-      "id": 37,
+      "id": 39,
+      "name": "나희선",
+      "organization": "샌드박스",
+      "title": "공동창업자/CCO",
+      "intro": "건강한 디지털 세상을 일궈온 1세대 클린 크리에이터",
+      "category": "AI・기술",
+      "image": "images/12wKfN7L0SM22rLBe3KQRpKWvKpuBRpmT.jpg"
+    },
+    {
+      "id": 40,
       "name": "남보라",
       "organization": "인천송림초등학교",
       "title": "교사",
@@ -341,7 +368,16 @@ const PROFILE_DATA = {
       "image": "images/1iktIxhPKWZX1hW2XRyHdZ8u2AdxG3YxD.jpg"
     },
     {
-      "id": 38,
+      "id": 41,
+      "name": "류석영",
+      "organization": "카카오임팩트 / KAIST 전산학부",
+      "title": "이사장/학부장",
+      "intro": "기술적 통찰로 미래 교육의 단단한 토양을 일구는 리더",
+      "category": "사디세를 만들어 가는 사람들",
+      "image": "images/1yZXoSGWBAyIKRB6OUI6EEhQKlgjPx-Y9.jpg"
+    },
+    {
+      "id": 42,
       "name": "류의정",
       "organization": "백암고등학교",
       "title": "교사",
@@ -350,7 +386,7 @@ const PROFILE_DATA = {
       "image": "images/1TqiY5UlYjPBaX8RTnOHmAMgTw2dwB6iA.jpg"
     },
     {
-      "id": 39,
+      "id": 43,
       "name": "모상현",
       "organization": "한국청소년정책연구원 학교폭력예방교육지원센터",
       "title": "센터장",
@@ -359,7 +395,7 @@ const PROFILE_DATA = {
       "image": "images/18c_z2NHhX3TyxNG-THiKHZZeE8ABXRkG.jpg"
     },
     {
-      "id": 40,
+      "id": 44,
       "name": "박리다",
       "organization": "부론초등학교",
       "title": "교사",
@@ -368,7 +404,7 @@ const PROFILE_DATA = {
       "image": "images/150vwUgDqKyuBjFXe728e6d8ViJ8vnyHt.jpg"
     },
     {
-      "id": 41,
+      "id": 45,
       "name": "박보성",
       "organization": "국립생태원",
       "title": "주임",
@@ -377,7 +413,7 @@ const PROFILE_DATA = {
       "image": "images/1uSKMcr-LZviQC0g8e_WdMxSyzvQfB6of.jpg"
     },
     {
-      "id": 42,
+      "id": 46,
       "name": "박성민",
       "organization": "서울동성중학교",
       "title": "전문상담교사",
@@ -386,7 +422,7 @@ const PROFILE_DATA = {
       "image": "images/1wr9g-67rtbKR07waX46TzPBwpWQ9GPI9.jpg"
     },
     {
-      "id": 43,
+      "id": 47,
       "name": "박소현",
       "organization": "홍익대학교사범대학부속여자고등학교(홍대부여고)",
       "title": "교사",
@@ -395,7 +431,7 @@ const PROFILE_DATA = {
       "image": "images/1iiPA6_6kEHf7cCKRmZIQUvVo5JnjfAG7.jpg"
     },
     {
-      "id": 44,
+      "id": 48,
       "name": "박윤정",
       "organization": "광덕초등학교",
       "title": "교사",
@@ -404,7 +440,7 @@ const PROFILE_DATA = {
       "image": "images/1CigpkgNPmSgizMPxUyn_vlHUkkKlfYwO.jpg"
     },
     {
-      "id": 45,
+      "id": 49,
       "name": "박은지",
       "organization": "충남교육청",
       "title": "교사",
@@ -413,7 +449,7 @@ const PROFILE_DATA = {
       "image": "images/1gsRx1CXanuYppVE5-3_v9tsFuSe_3iA4.jpg"
     },
     {
-      "id": 46,
+      "id": 50,
       "name": "박은혜",
       "organization": "푸른나무재단",
       "title": "사디세 가이드",
@@ -422,7 +458,7 @@ const PROFILE_DATA = {
       "image": "images/1eA49axMR0hyI0pI7ULrkPdnNeVwkWEh9.jpg"
     },
     {
-      "id": 47,
+      "id": 51,
       "name": "박지근",
       "organization": "수원매화초",
       "title": "교감",
@@ -431,7 +467,7 @@ const PROFILE_DATA = {
       "image": "images/181AKzrgN7wnFDRFMpCKLsKFRbSuZ4Mdo.jpg"
     },
     {
-      "id": 48,
+      "id": 52,
       "name": "박진석",
       "organization": "브라이언임팩트",
       "title": "디렉터",
@@ -440,7 +476,7 @@ const PROFILE_DATA = {
       "image": "images/1Af8OslzaHijPUBiPeKKqHum51SCEnN9u.jpg"
     },
     {
-      "id": 49,
+      "id": 53,
       "name": "박창용",
       "organization": "초등교사커뮤니티 인디스쿨",
       "title": "이사장",
@@ -449,7 +485,7 @@ const PROFILE_DATA = {
       "image": "images/1DFZL8trAkG5tJcG2Glyz4upukywkgIXr.jpg"
     },
     {
-      "id": 50,
+      "id": 54,
       "name": "박형규",
       "organization": "와부중학교",
       "title": "교사",
@@ -458,7 +494,16 @@ const PROFILE_DATA = {
       "image": "images/1OCcz0LQHI7did8vK-OiujP9oH74DCNHX.jpg"
     },
     {
-      "id": 51,
+      "id": 55,
+      "name": "배명훈",
+      "organization": "대표작 <타워>",
+      "title": "SF작가",
+      "intro": "문학적 상상력으로 AI 시대 가능성을 묻는 SF 작가",
+      "category": "AI・기술",
+      "image": "images/1Vs5vgm8XKWDAFnlwTUdilyyNVCbrET8e.jpg"
+    },
+    {
+      "id": 56,
       "name": "서동환",
       "organization": "인천시교육청",
       "title": "장학사",
@@ -467,7 +512,7 @@ const PROFILE_DATA = {
       "image": "images/1yTE_tODlx5rL3obQA1f_uqq4pWhdGkx_.jpg"
     },
     {
-      "id": 52,
+      "id": 57,
       "name": "서삼열",
       "organization": "사회적기업 다로리인",
       "title": "대표",
@@ -476,7 +521,7 @@ const PROFILE_DATA = {
       "image": "images/1j7wJuwfKqM7qE8ozQL-IT79v2tomu3Re.jpg"
     },
     {
-      "id": 53,
+      "id": 58,
       "name": "서아인",
       "organization": "복자고",
       "title": "교사",
@@ -485,7 +530,7 @@ const PROFILE_DATA = {
       "image": "images/19uXUpB5be3lbKy0GzmLKi7SAlPJkJZxO.jpg"
     },
     {
-      "id": 54,
+      "id": 59,
       "name": "서윤지",
       "organization": "한국국제협력단",
       "title": "전임",
@@ -494,7 +539,7 @@ const PROFILE_DATA = {
       "image": "images/1XiW7I5dWO02ytOmQ0yqYzOI6jb4QEP7R.jpg"
     },
     {
-      "id": 55,
+      "id": 60,
       "name": "서준영",
       "organization": "비상교육",
       "title": "연구원",
@@ -503,7 +548,7 @@ const PROFILE_DATA = {
       "image": "images/1zRilwUsiOtYjGsNCq-tDW_1i0Lw97mje.jpg"
     },
     {
-      "id": 56,
+      "id": 61,
       "name": "손영하",
       "organization": "송림초",
       "title": "교사",
@@ -512,7 +557,7 @@ const PROFILE_DATA = {
       "image": "images/1qixx3FPwPiB4RpcjemflJFF-75HDk24H.jpg"
     },
     {
-      "id": 57,
+      "id": 62,
       "name": "송미옥",
       "organization": "신백현초등학교 /신경윤리가치AI융합연구소(서울교대 윤리교육과 박사과정)",
       "title": "교사/수석연구원",
@@ -521,7 +566,7 @@ const PROFILE_DATA = {
       "image": "images/12tcsUYWXRG8CPvMz4BH-lQeAdKHxrRF3.jpg"
     },
     {
-      "id": 58,
+      "id": 63,
       "name": "송세호",
       "organization": "아주중학교",
       "title": "교사",
@@ -530,7 +575,7 @@ const PROFILE_DATA = {
       "image": "images/1DLPOG6jOMVvhX7aul39XvOsvP1KLYW90.jpg"
     },
     {
-      "id": 59,
+      "id": 64,
       "name": "송채원",
       "organization": "리라초등학교",
       "title": "교사",
@@ -539,7 +584,7 @@ const PROFILE_DATA = {
       "image": "images/1zPdYy4PJaCOhWSz1eMYdPy8ndWXiRvLg.jpg"
     },
     {
-      "id": 60,
+      "id": 65,
       "name": "신다윤",
       "organization": "서울미성초등학교",
       "title": "교사",
@@ -548,7 +593,7 @@ const PROFILE_DATA = {
       "image": "images/19fNfJb5iPj1w49AmzC5LuGbcZosA-dN6.jpg"
     },
     {
-      "id": 61,
+      "id": 66,
       "name": "신동석",
       "organization": "아람초등학교",
       "title": "교사",
@@ -557,7 +602,7 @@ const PROFILE_DATA = {
       "image": "images/1TFILzF-1h8irB4E21MxprGHrZgxqE-EG.jpg"
     },
     {
-      "id": 62,
+      "id": 67,
       "name": "신법규",
       "organization": "인천원동초등학교",
       "title": "교사",
@@ -566,7 +611,7 @@ const PROFILE_DATA = {
       "image": "images/1CXVVIP3Gk6mJFiVZm8bt8vad5OBCwEMz.jpg"
     },
     {
-      "id": 63,
+      "id": 68,
       "name": "신승인",
       "organization": "AI융합교육연구회",
       "title": "연구원",
@@ -575,7 +620,7 @@ const PROFILE_DATA = {
       "image": "images/1SQ42aQnbA6IeIyjk5PUI1wCl_gvAafpE.jpg"
     },
     {
-      "id": 64,
+      "id": 69,
       "name": "신예진",
       "organization": "서울도봉초등학교",
       "title": "교사",
@@ -584,7 +629,7 @@ const PROFILE_DATA = {
       "image": "images/1HKTsxzczbI_uqu17WEourbHcogWJo9Zy.jpg"
     },
     {
-      "id": 65,
+      "id": 70,
       "name": "안재승",
       "organization": "거꾸로캠퍼스",
       "title": "교육과정팀 팀장",
@@ -593,7 +638,7 @@ const PROFILE_DATA = {
       "image": "images/16etu4AqfpbA5j_vazKfeO65tjv92Dja3.jpg"
     },
     {
-      "id": 66,
+      "id": 71,
       "name": "양기정",
       "organization": "승지초등학교",
       "title": "교사",
@@ -602,7 +647,7 @@ const PROFILE_DATA = {
       "image": "images/1qr2KnBYuF6BWI4QbbyTH8tl1JBoETPhR.jpg"
     },
     {
-      "id": 67,
+      "id": 72,
       "name": "양형진",
       "organization": "서울대학교사범대학부설초등학교",
       "title": "교장",
@@ -611,7 +656,7 @@ const PROFILE_DATA = {
       "image": "images/1XJDp3qkjcr3z5PYo6k2jPc_jgc3sr7ow.jpg"
     },
     {
-      "id": 68,
+      "id": 73,
       "name": "양혜진",
       "organization": "다로리인",
       "title": "팀장",
@@ -620,7 +665,7 @@ const PROFILE_DATA = {
       "image": "images/1F4ZGmVENSPOf3182z-zeLxZso-lniMhr.jpg"
     },
     {
-      "id": 69,
+      "id": 74,
       "name": "엄고은",
       "organization": "기업가치연구소",
       "title": "연구원",
@@ -629,7 +674,7 @@ const PROFILE_DATA = {
       "image": "images/1GLTD00k8g3lypBmb5b5___R_hGmbjVxW.jpg"
     },
     {
-      "id": 70,
+      "id": 75,
       "name": "엄윤미",
       "organization": "재단법인 씨앗",
       "title": "CSO",
@@ -638,7 +683,7 @@ const PROFILE_DATA = {
       "image": "images/1fWmJf_Pbg_aP8HGDCBRmtayqeeZvtSZw.jpg"
     },
     {
-      "id": 71,
+      "id": 76,
       "name": "염강현",
       "organization": "한국지능정보사회진흥원",
       "title": "선임연구원",
@@ -647,7 +692,7 @@ const PROFILE_DATA = {
       "image": "images/13f01A9D3z0Z5xA7q_5zR3Ko2JjrTfqgg.jpg"
     },
     {
-      "id": 72,
+      "id": 77,
       "name": "오선영",
       "organization": "카카오모빌리티",
       "title": "이사",
@@ -656,7 +701,7 @@ const PROFILE_DATA = {
       "image": "images/1guLf2CtMQNSjEjQq0V4BZNGeP4Eo_ega.jpg"
     },
     {
-      "id": 73,
+      "id": 78,
       "name": "오신일",
       "organization": "금천구청소년상담복지센터",
       "title": "센터장",
@@ -665,7 +710,16 @@ const PROFILE_DATA = {
       "image": "images/1reYAKfPXizrLxpx-psjVuktA1GXpKBw1.jpg"
     },
     {
-      "id": 74,
+      "id": 79,
+      "name": "오유나",
+      "organization": "서울장평초",
+      "title": "교사",
+      "intro": "교사들과 함께 AI 교육 방향을 모색하는 교육부 선도교사 (서울대 AI융합교육 수업 가이드 저자)",
+      "category": "교원・장학사",
+      "image": "images/1fB5rVLE28H-bEDyiwqBuhK-GChXI_-TJ.jpg"
+    },
+    {
+      "id": 80,
       "name": "원지영",
       "organization": "향산초등학교",
       "title": "교사",
@@ -674,7 +728,7 @@ const PROFILE_DATA = {
       "image": "images/1GBeHcJ6ixMFyg4bBdVcciQvr-fNsiso8.jpg"
     },
     {
-      "id": 75,
+      "id": 81,
       "name": "유경혜",
       "organization": "한국미디어강사협회",
       "title": "대표",
@@ -683,7 +737,7 @@ const PROFILE_DATA = {
       "image": "images/1zNkT3prqGcH_7Py77coCM_8AhT6OeLi_.jpg"
     },
     {
-      "id": 76,
+      "id": 82,
       "name": "유은경",
       "organization": "서초스마트유스센터",
       "title": "팀원",
@@ -692,7 +746,7 @@ const PROFILE_DATA = {
       "image": "images/19xbVFzDqX0Zcry0siKXyfEEQQ4kY-DnT.jpg"
     },
     {
-      "id": 77,
+      "id": 83,
       "name": "유태환",
       "organization": "왜관초등학교",
       "title": "교사",
@@ -701,16 +755,34 @@ const PROFILE_DATA = {
       "image": "images/1GgZx9ek_Pj73RwTXvzZlNneD6eEZt_W-.jpg"
     },
     {
-      "id": 78,
-      "name": "육소연",
-      "organization": "푸른나무재단/사이좋은 디지털 세상",
-      "title": "강사",
-      "intro": "포용과 공존으로 디지털 미래를 설계하는 강사",
-      "category": "사디세를 만들어 가는 사람들",
-      "image": "images/1Yglh_1rgT9pjeEuZvmhyJg_qfWFazPSC.jpg"
+      "id": 84,
+      "name": "유호현",
+      "organization": "tobl.ai",
+      "title": "대표",
+      "intro": "AI와 협업하며 삶의 확장을 증명하는 슈퍼휴먼 실험가",
+      "category": "AI・기술",
+      "image": "images/1yXuE_1TRF7onCU6viW97N_grotxHXmVq.jpg"
     },
     {
-      "id": 79,
+      "id": 85,
+      "name": "육소연",
+      "organization": "푸른나무재단",
+      "title": "사디세 가이드",
+      "intro": "포용과 공존으로 디지털 미래를 설계하는 강사",
+      "category": "사디세를 만들어 가는 사람들",
+      "image": "images/1lFukwwyHwKCRkwFBb4Ba7dvCg58Gh3Gy.jpg"
+    },
+    {
+      "id": 86,
+      "name": "육심나",
+      "organization": "카카오임팩트 / 카카오",
+      "title": "사무국장/부사장",
+      "intro": "AI와 기술의 선한 힘을 믿는 임팩트 기획자",
+      "category": "사디세를 만들어 가는 사람들",
+      "image": "images/17RyPRzejRw-stY5eiKIBf3HDrx8VA6aB.jpg"
+    },
+    {
+      "id": 87,
       "name": "육혜연",
       "organization": "푸른나무재단",
       "title": "사디세 가이드",
@@ -719,7 +791,7 @@ const PROFILE_DATA = {
       "image": "images/1qd9rkdfvxzrK67uTHFfkzR2xMBYwNBet.jpg"
     },
     {
-      "id": 80,
+      "id": 88,
       "name": "윤민하",
       "organization": "화광중학교",
       "title": "교사",
@@ -728,7 +800,7 @@ const PROFILE_DATA = {
       "image": "images/1ZEARHkfSb2ao3xvy2r0q73kwqGLEnXEL.jpg"
     },
     {
-      "id": 81,
+      "id": 89,
       "name": "윤선경",
       "organization": "서울금양초등학교",
       "title": "교사",
@@ -737,7 +809,7 @@ const PROFILE_DATA = {
       "image": "images/1BG52R1Y9rdVpYafQegBUyHBj1ZqSlJwB.jpg"
     },
     {
-      "id": 82,
+      "id": 90,
       "name": "윤춘원",
       "organization": "포스코이앤씨",
       "title": "프로",
@@ -746,7 +818,7 @@ const PROFILE_DATA = {
       "image": "images/1vx48LwoINncPGvNJDTC_1ZsP_I4yda6A.jpg"
     },
     {
-      "id": 83,
+      "id": 91,
       "name": "윤한유",
       "organization": "부산기계공업고등학교",
       "title": "부장교사장교사",
@@ -755,7 +827,7 @@ const PROFILE_DATA = {
       "image": "images/1i_IjYGd1KUwsw3sop-F1h3Iemi3jWbw_.jpg"
     },
     {
-      "id": 84,
+      "id": 92,
       "name": "윤현정",
       "organization": "서울독산초등학교",
       "title": "교사",
@@ -764,7 +836,7 @@ const PROFILE_DATA = {
       "image": "images/1LYIKqnqVYiwc1PbFCjlC9lKQmd2tz0J5.jpg"
     },
     {
-      "id": 85,
+      "id": 93,
       "name": "이기주",
       "organization": "안서초등학교",
       "title": "교감",
@@ -773,7 +845,7 @@ const PROFILE_DATA = {
       "image": "images/1hRC0jNdVOAHGTsOGaQGp7jj53qlj0E6i.jpg"
     },
     {
-      "id": 86,
+      "id": 94,
       "name": "이민섭",
       "organization": "가천대학교 스타트업칼리지",
       "title": "초빙교수",
@@ -782,7 +854,7 @@ const PROFILE_DATA = {
       "image": "images/1SHGvtZmH5dKNVcLi3LLF8ohuvKOeMHKj.jpg"
     },
     {
-      "id": 87,
+      "id": 95,
       "name": "이삼미",
       "organization": "신하초등학교",
       "title": "교사",
@@ -791,7 +863,7 @@ const PROFILE_DATA = {
       "image": "images/1nS8csQfgItwYlYbNCVNY8r79mTX5ZoSl.jpg"
     },
     {
-      "id": 88,
+      "id": 96,
       "name": "이선주",
       "organization": "푸른나무재단",
       "title": "사디세 가이드",
@@ -800,7 +872,7 @@ const PROFILE_DATA = {
       "image": "images/1Hwwowi8d_ipV6qXbtEDh8-yrgSk2rOyo.jpg"
     },
     {
-      "id": 89,
+      "id": 97,
       "name": "이소림",
       "organization": "재단법인 씨앗 공간사업실",
       "title": "PM",
@@ -809,7 +881,7 @@ const PROFILE_DATA = {
       "image": "images/1UNsSedrnl_86s048h3t0Dv1KEKKVyiH4.jpg"
     },
     {
-      "id": 90,
+      "id": 98,
       "name": "이소희",
       "organization": "경수중학교",
       "title": "부장교사",
@@ -818,7 +890,7 @@ const PROFILE_DATA = {
       "image": "images/1JxN_LlT-Bohq-zgBv887BcXSxUs9EQNL.jpg"
     },
     {
-      "id": 91,
+      "id": 99,
       "name": "이송하",
       "organization": "넥슨재단",
       "title": "팀장",
@@ -827,7 +899,7 @@ const PROFILE_DATA = {
       "image": "images/1_s_3N4MJ98fop8GFuIWCksquuc5zebxx.jpg"
     },
     {
-      "id": 92,
+      "id": 100,
       "name": "이수민",
       "organization": "함현초등학교",
       "title": "교사",
@@ -836,7 +908,7 @@ const PROFILE_DATA = {
       "image": "images/1d1kJ7A2AnES7qtStslfZGGWtz5oLCQ0M.jpg"
     },
     {
-      "id": 93,
+      "id": 101,
       "name": "이수연",
       "organization": "신현고등학교",
       "title": "교사",
@@ -845,7 +917,7 @@ const PROFILE_DATA = {
       "image": "images/1zh3roIDqWjcssURk06OZn_5T70aUu8l7.jpg"
     },
     {
-      "id": 94,
+      "id": 102,
       "name": "이승재",
       "organization": "인천송림초등학교",
       "title": "3학년부장",
@@ -854,7 +926,7 @@ const PROFILE_DATA = {
       "image": "images/1sZC1tYblVXxdm6CJP6V0X9myvjj2eoY_.jpg"
     },
     {
-      "id": 95,
+      "id": 103,
       "name": "이예리",
       "organization": "성남시청소년청년재단",
       "title": "매니저",
@@ -863,7 +935,7 @@ const PROFILE_DATA = {
       "image": "images/1GK8Mdp3uKNod5ASedN3VE2IgKUQ2A28g.jpg"
     },
     {
-      "id": 96,
+      "id": 104,
       "name": "이원경",
       "organization": "분당초",
       "title": "정보부장교사",
@@ -872,7 +944,7 @@ const PROFILE_DATA = {
       "image": "images/13w8Sk85SUq8hgyhlkz2xPtVf-BZ9PQxp.jpg"
     },
     {
-      "id": 97,
+      "id": 105,
       "name": "이유나",
       "organization": "서울난우초",
       "title": "교사사",
@@ -881,7 +953,7 @@ const PROFILE_DATA = {
       "image": "images/1DGSvTieXVIQVLU5Uqr71x4PYRmRGaanC.jpg"
     },
     {
-      "id": 98,
+      "id": 106,
       "name": "이윤아",
       "organization": "한양대학교사범대학부속중학교",
       "title": "교사",
@@ -890,7 +962,7 @@ const PROFILE_DATA = {
       "image": "images/1cp2Q05Scv5z5kd3xUFXODyq_Fr8I7ZcS.jpg"
     },
     {
-      "id": 99,
+      "id": 107,
       "name": "이은진",
       "organization": "인천 송빛초",
       "title": "교사",
@@ -899,7 +971,7 @@ const PROFILE_DATA = {
       "image": "images/1Zz3jWbvb5CUDTqYLwuKFJr_vztaSLdMp.jpg"
     },
     {
-      "id": 100,
+      "id": 108,
       "name": "이은혜",
       "organization": "어썸스쿨",
       "title": "부장",
@@ -908,7 +980,16 @@ const PROFILE_DATA = {
       "image": "images/12xbCpEmLfJUH-bEyU1AOlh2bpKhTrwXW.jpg"
     },
     {
-      "id": 101,
+      "id": 109,
+      "name": "이재욱",
+      "organization": "서울대학교 AI연구원",
+      "title": "원장/교수",
+      "intro": "AI 연구를 선도하며 변화를 이끄는 연구자",
+      "category": "AI・기술",
+      "image": "images/1kP-e-d_N41haW_KWtqRC9pcNQXpmOFtH.jpg"
+    },
+    {
+      "id": 110,
       "name": "이재혁",
       "organization": "대구관광고등학교",
       "title": "교사",
@@ -917,7 +998,7 @@ const PROFILE_DATA = {
       "image": "images/1nEroPx-NZFep72vvQ9rCq9T8Y3n7LVCF.jpg"
     },
     {
-      "id": 102,
+      "id": 111,
       "name": "이정규",
       "organization": "원주 상지여자고등학교",
       "title": "교사",
@@ -926,7 +1007,7 @@ const PROFILE_DATA = {
       "image": "images/1StUmpxR-EoIpRi6-GQtXCEQWB5X5xVbj.jpg"
     },
     {
-      "id": 103,
+      "id": 112,
       "name": "이정백",
       "organization": "거꾸로캠퍼스",
       "title": "대표",
@@ -935,7 +1016,16 @@ const PROFILE_DATA = {
       "image": "images/1XKptHchpwYwg8yt-5Nsuf0qv5d0bcaX4.jpg"
     },
     {
-      "id": 104,
+      "id": 113,
+      "name": "이종익",
+      "organization": "BTF푸른나무재단",
+      "title": "대표",
+      "intro": "경계를 넘는 연결의 힘, 사회문제 해결의 설계자",
+      "category": "사디세를 만들어 가는 사람들",
+      "image": "images/1S84yWBdC4xm1cg6nlLpooLHR8n23PVTx.jpg"
+    },
+    {
+      "id": 114,
       "name": "이주영",
       "organization": "서울로봇인공지능과학관",
       "title": "주무관",
@@ -944,7 +1034,16 @@ const PROFILE_DATA = {
       "image": "images/1bQF_WJL0tCrCaPPz9qWACvZOMOr0j78I.jpg"
     },
     {
-      "id": 105,
+      "id": 115,
+      "name": "이지섭",
+      "organization": "어썸스쿨 이사회",
+      "title": "의장",
+      "intro": "기술을 도구로 아이들의 주체성을 길러온 교육 혁신가",
+      "category": "교육혁신・에듀테크",
+      "image": "images/1wwSlEXe2CN9azxGCV0cmW3bDmrBtVMXh.jpg"
+    },
+    {
+      "id": 116,
       "name": "이지윤",
       "organization": "서울신동초등학교",
       "title": "교사",
@@ -953,7 +1052,7 @@ const PROFILE_DATA = {
       "image": "images/1HoDppqJIqt0ASmEfkwo8RVE6T_ys2FQv.jpg"
     },
     {
-      "id": 106,
+      "id": 117,
       "name": "이창준",
       "organization": "사내초등학교",
       "title": "교사",
@@ -962,7 +1061,7 @@ const PROFILE_DATA = {
       "image": "images/1zA6Lwpj8I14nsZqdLlznYQykTM3IhM3H.jpg"
     },
     {
-      "id": 107,
+      "id": 118,
       "name": "이태경",
       "organization": "코웨이",
       "title": "과장",
@@ -971,7 +1070,7 @@ const PROFILE_DATA = {
       "image": "images/1Vfz1Njx3MRunB6NeJXs4TN9gT3nMeOTO.jpg"
     },
     {
-      "id": 108,
+      "id": 119,
       "name": "이현길",
       "organization": "부천초등학교",
       "title": "교사",
@@ -980,7 +1079,7 @@ const PROFILE_DATA = {
       "image": "images/1jptVpeAb_xzJ_NhDnL0h0XUYjjmNOl9Q.jpg"
     },
     {
-      "id": 109,
+      "id": 120,
       "name": "이현지",
       "organization": "숭실대학교 사회복지학부",
       "title": "교수",
@@ -989,7 +1088,7 @@ const PROFILE_DATA = {
       "image": "images/1PCX6YdJRZnvGJ1i-cbiHoXszYRwOcyjO.jpg"
     },
     {
-      "id": 110,
+      "id": 121,
       "name": "이혜수",
       "organization": "아산나눔재단",
       "title": "선임매니저",
@@ -998,7 +1097,7 @@ const PROFILE_DATA = {
       "image": "images/1GxJxOxTu2muvetfi3D_5bXV88y0MtqnW.jpg"
     },
     {
-      "id": 111,
+      "id": 122,
       "name": "이혜지",
       "organization": "서울영서초등학교",
       "title": "교사",
@@ -1007,7 +1106,7 @@ const PROFILE_DATA = {
       "image": "images/1IcWgnUnjjcTaRMDoHZsnFQ2OeUtkJL6_.jpg"
     },
     {
-      "id": 112,
+      "id": 123,
       "name": "이호정",
       "organization": "카카오",
       "title": "리더",
@@ -1016,7 +1115,7 @@ const PROFILE_DATA = {
       "image": "images/1CQSfWpLEscxB7EQs_6XeDHJZPldmti9V.jpg"
     },
     {
-      "id": 113,
+      "id": 124,
       "name": "임경애",
       "organization": "매원초등학교",
       "title": "교장",
@@ -1025,7 +1124,7 @@ const PROFILE_DATA = {
       "image": "images/1KOPmpOrMI-sRtilteHFxRaW93xLpSjEh.jpg"
     },
     {
-      "id": 114,
+      "id": 125,
       "name": "임규하",
       "organization": "전라남도교육청",
       "title": "장학사",
@@ -1034,7 +1133,7 @@ const PROFILE_DATA = {
       "image": "images/1UJnZZe7XzwApt9BLZCBY3lNrKRmyzLId.jpg"
     },
     {
-      "id": 115,
+      "id": 126,
       "name": "임미자",
       "organization": "탄천초등학교",
       "title": "교감",
@@ -1043,7 +1142,7 @@ const PROFILE_DATA = {
       "image": "images/1nUX6zTh6eLx-hsa40QvI-evKw4p5hB6D.jpg"
     },
     {
-      "id": 116,
+      "id": 127,
       "name": "임종화",
       "organization": "서울시립금천청소년센터",
       "title": "관장",
@@ -1052,7 +1151,7 @@ const PROFILE_DATA = {
       "image": "images/1hAhZ7QNzQkMVW4ZbBpREiRQ82Qs7eZLn.jpg"
     },
     {
-      "id": 117,
+      "id": 128,
       "name": "임지연",
       "organization": "숭실대학교 기업가치연구소",
       "title": "연구원",
@@ -1061,7 +1160,7 @@ const PROFILE_DATA = {
       "image": "images/1lza9-yfB20a4BFJAnrfZJe-7od0H9bFc.jpg"
     },
     {
-      "id": 118,
+      "id": 129,
       "name": "임태훈",
       "organization": "대구삼영초등학교",
       "title": "교사",
@@ -1070,7 +1169,16 @@ const PROFILE_DATA = {
       "image": "images/1Al2se879zBL0V78W3ATQWS8MID0caz-a.jpg"
     },
     {
-      "id": 119,
+      "id": 130,
+      "name": "장대익",
+      "organization": "가천대학교 스타트업칼리지",
+      "title": "학장/석좌교수",
+      "intro": "AI 시대, 대체 불가한 인간의 고유성을 탐구하는 석학",
+      "category": "AI・기술",
+      "image": "images/1-CHRgii3VUhFWyEDlr-eG76ujRPJy5ID.jpg"
+    },
+    {
+      "id": 131,
       "name": "장미희",
       "organization": "성남시청소년청년재단",
       "title": "미래교육실장",
@@ -1079,7 +1187,7 @@ const PROFILE_DATA = {
       "image": "images/19vlSg-UwxMquOpqrngqtKR59cZI9B1Z-.jpg"
     },
     {
-      "id": 120,
+      "id": 132,
       "name": "장선영",
       "organization": "한국과학창의재단",
       "title": "연구원",
@@ -1088,7 +1196,7 @@ const PROFILE_DATA = {
       "image": "images/1sDSiqF_IE5knspL3H7-KiFzoda_BwhPm.jpg"
     },
     {
-      "id": 121,
+      "id": 133,
       "name": "장영진",
       "organization": "잠원초등학교",
       "title": "교사",
@@ -1097,7 +1205,7 @@ const PROFILE_DATA = {
       "image": "images/1fYYpXEQ0YVzU0XgYywnu6DIwgGrKV6yy.jpg"
     },
     {
-      "id": 122,
+      "id": 134,
       "name": "장원정",
       "organization": "혜원여자고등학교",
       "title": "교사",
@@ -1106,7 +1214,7 @@ const PROFILE_DATA = {
       "image": "images/1r4KasP8BOmxiRcwA46c241C8jFZ2Cw3d.jpg"
     },
     {
-      "id": 123,
+      "id": 135,
       "name": "전민우",
       "organization": "인천산곡북초등학교",
       "title": "교사",
@@ -1115,7 +1223,7 @@ const PROFILE_DATA = {
       "image": "images/1x-ZVbMARl4vcWIt39Hek-8wk7_cdTxkt.jpg"
     },
     {
-      "id": 124,
+      "id": 136,
       "name": "전정아",
       "organization": "아산나눔재단",
       "title": "부팀장",
@@ -1124,7 +1232,7 @@ const PROFILE_DATA = {
       "image": "images/1KeFDL01Q2pP4yuDBVHrf67ZnBGSj66-T.jpg"
     },
     {
-      "id": 125,
+      "id": 137,
       "name": "정구영",
       "organization": "광교호수초등학교",
       "title": "교사",
@@ -1133,7 +1241,7 @@ const PROFILE_DATA = {
       "image": "images/1iqJzKQiNW6DRYRGwamk99hsAmV7OGmM0.jpg"
     },
     {
-      "id": 126,
+      "id": 138,
       "name": "정미영",
       "organization": "대구대천초등학교",
       "title": "초등교사",
@@ -1142,7 +1250,7 @@ const PROFILE_DATA = {
       "image": "images/1H-bMEjCtO33ULoUcdhRBU11lxBmOOf4z.jpg"
     },
     {
-      "id": 127,
+      "id": 139,
       "name": "정우진",
       "organization": "대제중학교",
       "title": "교사",
@@ -1151,7 +1259,7 @@ const PROFILE_DATA = {
       "image": "images/17C8U2nnVXbsC_Ks7QgYndnvBMmnxxDMI.jpg"
     },
     {
-      "id": 128,
+      "id": 140,
       "name": "정유주",
       "organization": "카카오게임즈",
       "title": "매니저",
@@ -1160,7 +1268,7 @@ const PROFILE_DATA = {
       "image": "images/13umDI0W_G4075lO2nf_MAngUbZYjMiLB.jpg"
     },
     {
-      "id": 129,
+      "id": 141,
       "name": "정지수",
       "organization": "오산고등학교",
       "title": "교사",
@@ -1169,7 +1277,7 @@ const PROFILE_DATA = {
       "image": "images/1CQ3qHqEu--wAA98T-qzC-D-7bFajYUdI.jpg"
     },
     {
-      "id": 130,
+      "id": 142,
       "name": "정찬필",
       "organization": "피클랩/미래교실네트워크",
       "title": "대표",
@@ -1178,7 +1286,7 @@ const PROFILE_DATA = {
       "image": "images/1GKB3dIFtA_ryzdQaUdMZYV3jXYeptvfa.jpg"
     },
     {
-      "id": 131,
+      "id": 143,
       "name": "정현주",
       "organization": "희망대초등학교",
       "title": "교사",
@@ -1187,7 +1295,7 @@ const PROFILE_DATA = {
       "image": "images/1XavV5rnV65wAMk9Q8QKfHk_IagJ0lyf9.jpg"
     },
     {
-      "id": 132,
+      "id": 144,
       "name": "조상욱",
       "organization": "브라이언임팩트",
       "title": "디렉터",
@@ -1196,7 +1304,16 @@ const PROFILE_DATA = {
       "image": "images/1UVvm6WjVn6kz-JWo81k9XoeVRm3C7Orj.jpg"
     },
     {
-      "id": 133,
+      "id": 145,
+      "name": "조성훈",
+      "organization": "BTF푸른나무재단",
+      "title": "센터장",
+      "intro": "좋은 일을 일로 하는 사회변화 편집장",
+      "category": "사디세를 만들어 가는 사람들",
+      "image": "images/1itYzmcAQF0cRQILbN3wHKip-ON71d1UA.jpg"
+    },
+    {
+      "id": 146,
       "name": "조승범",
       "organization": "충남교육청",
       "title": "초등교사",
@@ -1205,7 +1322,7 @@ const PROFILE_DATA = {
       "image": "images/1H2KSAg9YQsI0gtIiVue6NJRfCLzRkzpL.jpg"
     },
     {
-      "id": 134,
+      "id": 147,
       "name": "조아란",
       "organization": "신남중학교",
       "title": "교사",
@@ -1214,7 +1331,7 @@ const PROFILE_DATA = {
       "image": "images/1JxgG6TSqBsVq6CQGIRS9mBGqHxMYlz3S.jpg"
     },
     {
-      "id": 135,
+      "id": 148,
       "name": "조영탁",
       "organization": "넥슨코리아",
       "title": "과장",
@@ -1223,7 +1340,7 @@ const PROFILE_DATA = {
       "image": "images/1jimSAelSKNu3EMLEQOI5615ZJKfUIrcI.jpg"
     },
     {
-      "id": 136,
+      "id": 149,
       "name": "주보미",
       "organization": "성남시청소년청년재단",
       "title": "매니저",
@@ -1232,7 +1349,7 @@ const PROFILE_DATA = {
       "image": "images/1UnQSp5qU8H1xrWRoyHjkdA9KJb6Ct0J6.jpg"
     },
     {
-      "id": 137,
+      "id": 150,
       "name": "진예은",
       "organization": "경기태성초등학교",
       "title": "교사",
@@ -1241,7 +1358,7 @@ const PROFILE_DATA = {
       "image": "images/170yEM_dpm_xFWNALQrab-SjSjRMPRNVE.jpg"
     },
     {
-      "id": 138,
+      "id": 151,
       "name": "최명길",
       "organization": "사단법인 미래교실네트워크",
       "title": "사무총장",
@@ -1250,7 +1367,7 @@ const PROFILE_DATA = {
       "image": "images/1L2bD-k70BNCSTfCOaUSp4Ier-q3FyIJZ.jpg"
     },
     {
-      "id": 139,
+      "id": 152,
       "name": "최명환",
       "organization": "인천학산초등학교",
       "title": "교사",
@@ -1259,7 +1376,7 @@ const PROFILE_DATA = {
       "image": "images/1tgECSG1bwCXgLipdaB0st5bAMGMQxvfo.jpg"
     },
     {
-      "id": 140,
+      "id": 153,
       "name": "최서연",
       "organization": "한류초등학교",
       "title": "교사",
@@ -1268,7 +1385,7 @@ const PROFILE_DATA = {
       "image": "images/1wreiT9W5FDxfsijcUfyHKB4BvpZHDZ2J.jpg"
     },
     {
-      "id": 141,
+      "id": 154,
       "name": "최인경",
       "organization": "인천동막초등학교",
       "title": "교사",
@@ -1277,16 +1394,25 @@ const PROFILE_DATA = {
       "image": "images/1S_UFljsvQReMaRskQ-nFbhVwG0yMlf1f.jpg"
     },
     {
-      "id": 142,
-      "name": "최정원",
-      "organization": "한국정보교사연합회",
-      "title": "부회장",
-      "intro": "if(정보교육==진심): return 아이들의_무한한_미래",
-      "category": "교원・장학사",
-      "image": "images/1QTm1aiUd5hzhy5XalZ5A4WCj24lfuVla.jpg"
+      "id": 155,
+      "name": "최지원",
+      "organization": "카카오임팩트",
+      "title": "PM",
+      "intro": "사회적 책임을 다해 사이좋은 디지털 세상을 가꿔온 PM",
+      "category": "사디세를 만들어 가는 사람들",
+      "image": "images/1obUW1kuNmNjCghuAk1WJW2cZrG1oGkxg.jpg"
     },
     {
-      "id": 143,
+      "id": 156,
+      "name": "최태성",
+      "organization": "별별한국사",
+      "title": "역사커뮤니케이터",
+      "intro": "역사적 통찰로 디지털과 AI 시대를 잇는 스토리텔러",
+      "category": "교육혁신・에듀테크",
+      "image": "images/1WyVJgMFBm2pFjniSYOwicKPfPw653AFj.jpg"
+    },
+    {
+      "id": 157,
       "name": "평진영",
       "organization": "덕풍초등학교",
       "title": "교사",
@@ -1295,7 +1421,7 @@ const PROFILE_DATA = {
       "image": "images/1_OGXZ1eESO8Q5Xe9pM_zl_NCl1cZuzMM.jpg"
     },
     {
-      "id": 144,
+      "id": 158,
       "name": "한미향",
       "organization": "인천선학초등학교",
       "title": "교사",
@@ -1304,7 +1430,7 @@ const PROFILE_DATA = {
       "image": "images/1As483j926rWRN8vMBVBpDA_2pBP5_2Mv.jpg"
     },
     {
-      "id": 145,
+      "id": 159,
       "name": "한상욱",
       "organization": "창의와날개",
       "title": "이사",
@@ -1313,7 +1439,7 @@ const PROFILE_DATA = {
       "image": "images/1LadknRS1UR6t8qkuLNU3cGFwHHXTmktX.jpg"
     },
     {
-      "id": 146,
+      "id": 160,
       "name": "한영희",
       "organization": "재현고등학교",
       "title": "교사",
@@ -1322,16 +1448,16 @@ const PROFILE_DATA = {
       "image": "images/1jUfwkc4qoLM818j57MKR2a3tdqleL-_M.jpg"
     },
     {
-      "id": 147,
+      "id": 161,
       "name": "한재용",
       "organization": "순천고등학교",
       "title": "교사",
       "intro": "학생들이 AI를 어떻게 활용해야할지 고민하는 선생님",
       "category": "교원・장학사",
-      "image": "images/1RIiQKBKDffzqzzIk_6m9MN6q4HB0ywUW.jpg"
+      "image": "images/1PPv8TAwLT0rOSke9KvlhaQhtHg6I22Ia.jpg"
     },
     {
-      "id": 148,
+      "id": 162,
       "name": "현예지",
       "organization": "동부초등학교",
       "title": "부장교사",
@@ -1340,7 +1466,7 @@ const PROFILE_DATA = {
       "image": "images/1hQH6GmwztGoZNF-0gvfPAPH1Av6zKyr6.jpg"
     },
     {
-      "id": 149,
+      "id": 163,
       "name": "황민호",
       "organization": "카카오",
       "title": "수석",
@@ -1349,7 +1475,7 @@ const PROFILE_DATA = {
       "image": "images/1A_9I-47T8y3mgcu69uqVJfS6rJMuHMb0.jpg"
     },
     {
-      "id": 150,
+      "id": 164,
       "name": "황윤주",
       "organization": "고명외식고등학교",
       "title": "교사",
@@ -1358,7 +1484,7 @@ const PROFILE_DATA = {
       "image": "images/1MBbRZmWvphKqBlMQn3T9lnysYZ_v3GjD.jpg"
     },
     {
-      "id": 151,
+      "id": 165,
       "name": "황정호",
       "organization": "서울삼육고등학교",
       "title": "교사",
@@ -1367,6 +1493,6 @@ const PROFILE_DATA = {
       "image": "images/1pUgqjt_mdUywnc19d4TR9xXHeq3Ltd7p.jpg"
     }
   ],
-  "total": 151,
-  "built_at": "2026-02-11 15:09:53"
+  "total": 165,
+  "built_at": "2026-02-11 16:38:20"
 };
