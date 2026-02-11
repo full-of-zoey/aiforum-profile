@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이좋은 AI 포럼 - 참여자 프로필</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+    <style>
+        :root {
+            /* 브랜드 컬러 - 사이좋은 AI 포럼 */
+            --primary-cyan: #00B8D4;
+            --primary-cyan-light: #4DD0E1;
+            --primary-cyan-dark: #0097A7;
+            --accent-pink: #E91E63;
+            --accent-yellow: #FFD54F;
+            --accent-green: #66BB6A;
+            --accent-purple: #BA68C8;
+            --accent-blue: #42A5F5;
+            --dark: #1a1a1a;
+            --background: #f8fbfd;
+            --background-gradient: linear-gradient(180deg, #e0f7fa 0%, #f8fbfd 100%);
+            --text-gray: #546E7A;
+            --card-bg: #ffffff;
+            --highlight-yellow: #FFF9C4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--background);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Header with Banner */
+        .header {
+            background: white;
+            padding: 0;
+        }
+
+        .header-banner {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .header-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Section Title */
+        .section-title {
+            background: var(--background-gradient);
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            border-bottom: 3px solid var(--primary-cyan-light);
+        }
+
+        .title-card {
+            background: white;
+            border: 3px solid var(--primary-cyan);
+            border-radius: 24px;
+            padding: 36px 50px;
+            display: inline-block;
+            position: relative;
+            box-shadow: 0 8px 32px rgba(0, 184, 212, 0.15);
+        }
+
+        .board-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary-cyan);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .title-card h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark);
+            line-height: 1.5;
+        }
+
+        .title-card h1 .highlight {
+            background: linear-gradient(180deg, transparent 60%, var(--highlight-yellow) 60%);
+            padding: 0 4px;
+        }
+
+        .participant-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary-cyan);
+            padding: 12px 28px;
+            border-radius: 50px;
+            margin-top: 28px;
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 4px 16px rgba(0, 184, 212, 0.3);
+        }
+
+        .participant-count .number {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-gray);
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #e0f7fa;
+            border-top-color: var(--primary-cyan);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Filter Section */
+        .filter-section {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 36px 40px 20px;
+            background: var(--background);
+        }
+
+        .filter-container {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 14px 20px 14px 50px;
+            border: 2px solid #B2EBF2;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-cyan);
+            box-shadow: 0 0 0 4px rgba(0, 184, 212, 0.1);
+        }
+
+        .search-box::before {
+            content: "🔍";
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.1rem;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #B2EBF2;
+            border-radius: 50px;
+            background: white;
+            font-size: 0.9rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            color: var(--text-gray);
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary-cyan);
+            color: var(--primary-cyan);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-cyan);
+            border-color: var(--primary-cyan);
+            color: white;
+        }
+
+        /* Profile Grid */
+        .profile-section {
+            background: linear-gradient(180deg, #E0F7FA 0%, #B2EBF2 50%, #80DEEA 100%);
+            padding: 40px;
+            min-height: 60vh;
+            position: relative;
+        }
+
+        /* Cloud decorations */
+        .profile-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60'%3E%3Cpath fill='%23f8fbfd' d='M0,60 C150,60 200,30 300,30 C400,30 450,50 600,50 C750,50 800,20 900,20 C1000,20 1050,60 1200,60 L1200,0 L0,0 Z'/%3E%3C/svg%3E") repeat-x;
+            background-size: 1200px 60px;
+        }
+
+        .profile-grid {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 20px;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background: var(--card-bg);
+            border: 3px solid var(--dark);
+            border-radius: 20px;
+            padding: 20px 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 0;
+        }
+
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: -5px;
+            bottom: -5px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 20px;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translate(-3px, -3px);
+        }
+
+        .profile-card:hover::before {
+            top: 8px;
+            left: 8px;
+        }
+
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid var(--dark);
+            margin: 0 auto 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .profile-info {
+            text-align: center;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-name {
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+            color: var(--dark);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        .profile-org {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            margin-bottom: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        .profile-title {
+            display: inline-block;
+            background: var(--dark);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .profile-intro {
+            font-size: 0.85rem;
+            color: var(--dark);
+            line-height: 1.5;
+            background: var(--highlight-yellow);
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 500;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .profile-intro span {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 카테고리별 자기소개 배경색 (명찰 색상 기반) */
+        /* 노랑: C0 M14 Y100 K0 → #FFDB00 */
+        .intro-yellow { background: rgba(255, 219, 0, 0.2); }
+        /* 분홍: C6 M53 Y0 K0 → #F078FF */
+        .intro-pink { background: rgba(240, 120, 255, 0.18); }
+        /* 파랑: C85 M21 Y0 K0 → #26C9FF */
+        .intro-blue { background: rgba(38, 201, 255, 0.18); }
+        /* 초록: C75 M0 Y71 K0 → #40FF4A */
+        .intro-green { background: rgba(64, 255, 74, 0.18); }
+        /* 보라: C52 M38 Y0 K0 → #7A9EFF */
+        .intro-purple { background: rgba(122, 158, 255, 0.2); }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 80px 20px;
+            grid-column: 1 / -1;
+        }
+
+        .no-results-icon {
+            font-size: 4rem;
+            margin-bottom: 16px;
+        }
+
+        .no-results p {
+            background: white;
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 16px;
+            border: 3px solid var(--dark);
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal {
+            background: white;
+            border: 4px solid var(--dark);
+            border-radius: 28px;
+            max-width: 420px;
+            width: 100%;
+            padding: 44px 36px;
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            text-align: center;
+            box-shadow: 8px 8px 0 rgba(0,0,0,0.15);
+        }
+
+        .modal-overlay.active .modal {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--dark);
+            background: var(--primary-cyan);
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: white;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            transform: rotate(90deg);
+            background: var(--accent-pink);
+        }
+
+        .modal .profile-image {
+            width: 120px;
+            height: 120px;
+            font-size: 3rem;
+            border-width: 4px;
+            margin-bottom: 20px;
+        }
+
+        .modal .profile-name {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .modal .profile-org {
+            font-size: 1rem;
+            white-space: normal;
+            overflow: visible;
+        }
+
+        .modal .profile-title {
+            font-size: 0.9rem;
+            padding: 6px 18px;
+            margin-bottom: 20px;
+        }
+
+        .modal .profile-intro {
+            font-size: 1.05rem;
+            padding: 18px 20px;
+            border: 2px solid var(--dark);
+            height: auto;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .modal .profile-intro span {
+            display: block;
+            -webkit-line-clamp: unset;
+            overflow: visible;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo {
+            height: 28px;
+            width: auto;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.7;
+        }
+
+        .footer p {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1600px) {
+            .profile-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .profile-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .profile-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-banner img {
+                max-height: 300px;
+                object-fit: cover;
+            }
+
+            .section-title {
+                padding: 30px 20px;
+            }
+
+            .title-card {
+                padding: 24px 20px;
+            }
+
+            .title-card h1 {
+                font-size: 1.2rem;
+            }
+
+            .filter-section {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .profile-section {
+                padding: 30px 20px;
+            }
+
+            .filter-container {
+                flex-direction: column;
+            }
+
+            .search-box {
+                width: 100%;
+                max-width: none;
+            }
+
+            .filter-buttons {
+                width: 100%;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding-bottom: 8px;
+            }
+
+            .filter-btn {
+                white-space: nowrap;
+            }
+
+            .profile-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .modal {
+                padding: 36px 24px;
+                margin: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Avatar Colors - 브랜드 캐릭터 컬러 기반 */
+        .avatar-color-1 { background: linear-gradient(135deg, #E91E63, #F48FB1); }
+        .avatar-color-2 { background: linear-gradient(135deg, #66BB6A, #A5D6A7); }
+        .avatar-color-3 { background: linear-gradient(135deg, #FFD54F, #FFECB3); }
+        .avatar-color-4 { background: linear-gradient(135deg, #BA68C8, #E1BEE7); }
+        .avatar-color-5 { background: linear-gradient(135deg, #42A5F5, #90CAF9); }
+        .avatar-color-6 { background: linear-gradient(135deg, #00B8D4, #80DEEA); }
+        .avatar-color-7 { background: linear-gradient(135deg, #FF7043, #FFAB91); }
+        .avatar-color-8 { background: linear-gradient(135deg, #26A69A, #80CBC4); }
+        .avatar-color-9 { background: linear-gradient(135deg, #7E57C2, #B39DDB); }
+        .avatar-color-10 { background: linear-gradient(135deg, #EC407A, #F8BBD9); }
+    </style>
+</head>
+<body>
+    <!-- Header with Banner -->
+    <header class="header">
+        <div class="header-banner">
+            <img src="assets/header-banner-v2.png" alt="사이좋은 네트워크 - 카카오와 함께 만드는 아이들의 AI 미래">
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="이름으로 검색하세요">
+            </div>
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">전체</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Grid -->
+    <section class="profile-section">
+        <div class="profile-grid" id="profileGrid">
+            <div class="loading" style="grid-column: 1 / -1;">
+                <div class="loading-spinner"></div>
+                <p>참여자 정보를 불러오는 중...</p>
+            </div>
+        </div>
+        <div class="no-results" id="noResults" style="display: none;">
+            <div class="no-results-icon">🔍</div>
+            <p>검색 결과가 없습니다</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logos">
+            <img src="assets/kakao-logo.png" alt="카카오" class="footer-logo">
+            <img src="assets/kakao-impact-logo.png" alt="카카오임팩트" class="footer-logo">
+            <img src="assets/bluetree-logo.png" alt="푸른나무재단" class="footer-logo">
+        </div>
+        <p>© 2026 사이좋은 AI 포럼. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="profile-image" id="modalImage"></div>
+            <div class="profile-info">
+                <h2 class="profile-name" id="modalName"></h2>
+                <p class="profile-org" id="modalOrg"></p>
+                <span class="profile-title" id="modalTitle"></span>
+                <p class="profile-intro" id="modalIntro"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/profiles.js"></script>
+    <script>
+        // 전역 변수
+        let profileData = PROFILE_DATA.profiles || [];
+        let categoryOrder = PROFILE_DATA.categories || [];
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        // DOM Elements
+        const profileGrid = document.getElementById('profileGrid');
+        const searchInput = document.getElementById('searchInput');
+        const filterButtons = document.getElementById('filterButtons');
+        const noResults = document.getElementById('noResults');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const modalClose = document.getElementById('modalClose');
+
+        // 데이터 로드 및 렌더링
+        function loadData() {
+            generateFilterButtons();
+            renderProfiles(profileData);
+        }
+
+        // 필터 버튼 생성 (중구분 카테고리 기반)
+        function generateFilterButtons() {
+            categoryOrder.forEach(cat => {
+                const count = profileData.filter(p => p.category === cat).length;
+                if (count === 0) return;
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.dataset.filter = cat;
+                btn.textContent = cat;
+                btn.title = `${cat} (${count}명)`;
+                filterButtons.appendChild(btn);
+            });
+        }
+
+        // 아바타 색상
+        function getAvatarColor(id) {
+            return `avatar-color-${((id - 1) % 10) + 1}`;
+        }
+
+        // 이름 첫 글자
+        function getInitial(name) {
+            return name ? name.charAt(0) : '?';
+        }
+
+        // 카테고리 → 자기소개 배경색 매핑 (명찰 색상 기반)
+        const categoryColorMap = {
+            '교원': 'intro-yellow',
+            '장학사': 'intro-yellow',
+            'AI・기술': 'intro-pink',
+            '교육혁신・에듀테크': 'intro-blue',
+            '사디세 강사': 'intro-blue',
+            '정책・연구': 'intro-green',
+            '기타': 'intro-purple',
+        };
+
+        // 프로필 카드 생성
+        function createProfileCard(profile) {
+            const avatarClass = getAvatarColor(profile.id);
+            const initial = getInitial(profile.name);
+            const introColor = categoryColorMap[profile.category] || 'intro-purple';
+
+            const imageContent = profile.image
+                ? `<img src="${profile.image}" alt="${profile.name}" onerror="this.parentElement.innerHTML='${initial}'">`
+                : initial;
+
+            return `
+                <div class="profile-card" data-id="${profile.id}">
+                    <div class="profile-image ${avatarClass}">${imageContent}</div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">${profile.name}</h3>
+                        <p class="profile-org">${profile.organization}</p>
+                        <span class="profile-title">${profile.title}</span>
+                        <p class="profile-intro ${introColor}"><span>"${profile.intro}"</span></p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // 프로필 렌더링
+        function renderProfiles(profiles) {
+            if (profiles.length === 0) {
+                profileGrid.innerHTML = '';
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+                profileGrid.innerHTML = profiles.map(createProfileCard).join('');
+                attachCardListeners();
+            }
+        }
+
+        // 카드 클릭 이벤트
+        function attachCardListeners() {
+            document.querySelectorAll('.profile-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const id = parseInt(card.dataset.id);
+                    openModal(id);
+                });
+            });
+        }
+
+        // 모달 열기
+        function openModal(id) {
+            const profile = profileData.find(p => p.id === id);
+            if (!profile) return;
+
+            const avatarClass = getAvatarColor(profile.id);
+            const initial = getInitial(profile.name);
+
+            const modalImage = document.getElementById('modalImage');
+            modalImage.className = `profile-image ${avatarClass}`;
+            modalImage.innerHTML = profile.image
+                ? `<img src="${profile.image}" alt="${profile.name}" onerror="this.parentElement.innerHTML='${initial}'">`
+                : initial;
+
+            document.getElementById('modalName').textContent = profile.name;
+            document.getElementById('modalOrg').textContent = profile.organization;
+            document.getElementById('modalTitle').textContent = profile.title;
+
+            const modalIntro = document.getElementById('modalIntro');
+            const introColor = categoryColorMap[profile.category] || 'intro-purple';
+            modalIntro.className = `profile-intro ${introColor}`;
+            modalIntro.innerHTML = `<span>"${profile.intro}"</span>`;
+
+            modalOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // 모달 닫기
+        function closeModal() {
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // 필터링
+        function filterProfiles() {
+            let filtered = profileData;
+
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(p => p.category === currentFilter);
+            }
+
+            if (currentSearch) {
+                const searchLower = currentSearch.toLowerCase();
+                filtered = filtered.filter(p =>
+                    p.name.toLowerCase().includes(searchLower)
+                );
+            }
+
+            renderProfiles(filtered);
+        }
+
+        // 이벤트 리스너
+        searchInput.addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            filterProfiles();
+        });
+
+        filterButtons.addEventListener('click', (e) => {
+            if (e.target.classList.contains('filter-btn')) {
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                currentFilter = e.target.dataset.filter;
+                filterProfiles();
+            }
+        });
+
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) closeModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // 초기 로드
+        loadData();
+    </script>
+</body>
+</html>
