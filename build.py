@@ -116,7 +116,7 @@ def main():
             "col14": col14,
         })
 
-    # 중복 제출 처리: 같은 이름+소속이면 내용이 더 충실한 것을 유지
+    # 중복 제출 처리 1차: 같은 이름+소속이면 내용이 더 충실한 것을 유지
     seen = {}
     for entry in all_entries:
         key = (entry["name"], entry["organization"])
@@ -132,6 +132,33 @@ def main():
                 print(f"  중복 제출: {entry['name']} ({entry['organization']}) → 기존 유지")
         else:
             seen[key] = entry
+
+    # 중복 제출 처리 2차: 같은 이름인데 소속이 다른 경우 (동명이인 제외)
+    # 김정선은 동명이인으로 확인됨
+    same_name_ok = {"김정선"}
+    seen2 = {}
+    deduped = {}
+    for key, entry in seen.items():
+        name = entry["name"]
+        if name in same_name_ok:
+            deduped[key] = entry
+            continue
+        if name in seen2:
+            prev_key = seen2[name]
+            prev = deduped[prev_key]
+            prev_score = len(prev["intro"]) if prev["intro"] not in ("", "~~", "-") else 0
+            curr_score = len(entry["intro"]) if entry["intro"] not in ("", "~~", "-") else 0
+            if curr_score > prev_score:
+                print(f"  중복 제출 (소속 다름): {name} ({entry['organization']}) → 최신 유지")
+                del deduped[prev_key]
+                deduped[key] = entry
+                seen2[name] = key
+            else:
+                print(f"  중복 제출 (소속 다름): {name} ({entry['organization']}) → 기존 유지")
+        else:
+            seen2[name] = key
+            deduped[key] = entry
+    seen = deduped
 
     # 취소자 제외
     registration_list = []
