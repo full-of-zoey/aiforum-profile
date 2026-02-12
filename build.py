@@ -175,26 +175,20 @@ def main():
     print(f"❌ 취소/중복 제외: {cancelled_count}명")
 
     # --- 시트2 파싱: 카테고리 분류 (이름+소속으로 매칭) ---
-    # 컬럼: (빈), 연번, 대구분, 중구분, 명찰구분, 유입구분, 성함, 사전등록, 연락처, 이메일, 소속, 직함, ...
+    # 컬럼: (빈), 연번, 대구분, 중구분, 프로필보드구분, 명찰구분, 유입구분, 성함, 사전등록, 연락처, 이메일, 소속, 직함, ...
     category_by_name = {}       # name → category (단일 매칭용)
     category_by_name_org = {}   # (name, org) → category (동명이인용)
     for row in rows2:
-        name = row[6].strip() if len(row) > 6 else ""
+        name = row[7].strip() if len(row) > 7 else ""
         if not name:
             continue
-        mid_cat = row[3].strip() if len(row) > 3 else ""
-        org = row[10].strip() if len(row) > 10 else ""
+        # 프로필보드 구분 컬럼 사용 (이미 통합된 카테고리명)
+        cat = row[4].strip() if len(row) > 4 else ""
+        org = row[11].strip() if len(row) > 11 else ""
 
-        # 카테고리 통합
-        if mid_cat == "카카오":
-            mid_cat = "AI・기술"
-        if mid_cat == "교원" or mid_cat == "장학사":
-            mid_cat = "교원・장학사"
-        if mid_cat == "사디세 강사":
-            mid_cat = "사디세를 만들어 가는 사람들"
-        if mid_cat:
-            category_by_name[name] = mid_cat
-            category_by_name_org[(name, org)] = mid_cat
+        if cat:
+            category_by_name[name] = cat
+            category_by_name_org[(name, org)] = cat
 
     print(f"✅ 시트2 분류자: {len(category_by_name)}명")
 

@@ -123,6 +123,40 @@
             font-weight: 800;
         }
 
+        /* Random Notice */
+        .random-notice {
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            font-weight: 500;
+            margin-top: 8px;
+            margin-bottom: -16px;
+        }
+
+        /* Floating Forum Button */
+        .forum-floating-btn {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            padding: 14px 28px;
+            background: var(--dark);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            z-index: 999;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .forum-floating-btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+        }
+
         /* Loading State */
         .loading {
             text-align: center;
@@ -584,6 +618,17 @@
                 font-size: 1.2rem;
             }
 
+            .random-notice {
+                text-align: left;
+            }
+
+            .forum-floating-btn {
+                bottom: 20px;
+                right: 20px;
+                padding: 12px 20px;
+                font-size: 0.85rem;
+            }
+
             .filter-section {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -658,10 +703,16 @@
                 <input type="text" id="searchInput" placeholder="이름으로 검색하세요">
             </div>
             <div class="filter-buttons" id="filterButtons">
-                <button class="filter-btn active" data-filter="all">전체</button>
+                <button class="filter-btn active" data-filter="all" id="filterAll">전체</button>
             </div>
         </div>
+        <p class="random-notice">프로필은 새로고침할 때마다 랜덤으로 노출됩니다</p>
     </section>
+
+    <!-- Floating Forum Button -->
+    <a href="https://juniorschool.kakaoimpact.org/forum" target="_blank" class="forum-floating-btn">
+        포럼 페이지 바로가기 →
+    </a>
 
     <!-- Profile Grid -->
     <section class="profile-section">
@@ -753,6 +804,8 @@
         // 데이터 로드 및 렌더링
         function loadData() {
             profileData = softPriorityShuffle(profileData);
+            // 전체 버튼에 인원수 표기
+            document.getElementById('filterAll').textContent = `전체 (${profileData.length})`;
             generateFilterButtons();
             renderProfiles(profileData);
         }
@@ -791,14 +844,21 @@
             '기타': 'intro-purple',
         };
 
+        // 이미지별 특수 스타일 (사진 위치/크기 조정)
+        const imageOverrides = {
+            'images/1NMqNJq2DGa9H44Vp0TvQv4wO4uNg51Ox.jpg': 'object-position: center 25%',  // 김봉섭: 얼굴 위로
+            'images/1kP-e-d_N41haW_KWtqRC9pcNQXpmOFtH.jpg': 'object-position: center 15%; transform: scale(1.6)',  // 이재욱: 전신→얼굴 확대
+        };
+
         // 프로필 카드 생성
         function createProfileCard(profile) {
             const avatarClass = getAvatarColor(profile.id);
             const initial = getInitial(profile.name);
             const introColor = categoryColorMap[profile.category] || 'intro-purple';
 
+            const imgStyle = profile.image && imageOverrides[profile.image] ? ` style="${imageOverrides[profile.image]}"` : '';
             const imageContent = profile.image
-                ? `<img src="${profile.image}" alt="${profile.name}" onerror="this.parentElement.innerHTML='${initial}'">`
+                ? `<img src="${profile.image}" alt="${profile.name}"${imgStyle} onerror="this.parentElement.innerHTML='${initial}'">`
                 : initial;
 
             return `
@@ -846,8 +906,9 @@
 
             const modalImage = document.getElementById('modalImage');
             modalImage.className = `profile-image ${avatarClass}`;
+            const modalImgStyle = profile.image && imageOverrides[profile.image] ? ` style="${imageOverrides[profile.image]}"` : '';
             modalImage.innerHTML = profile.image
-                ? `<img src="${profile.image}" alt="${profile.name}" onerror="this.parentElement.innerHTML='${initial}'">`
+                ? `<img src="${profile.image}" alt="${profile.name}"${modalImgStyle} onerror="this.parentElement.innerHTML='${initial}'">`
                 : initial;
 
             document.getElementById('modalName').textContent = profile.name;
